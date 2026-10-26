@@ -12,7 +12,6 @@ export default function CategoriesSection({ onSelectCategory, lang = 'en' }) {
   const necklaces = getCat('necklaces');
   const earrings = getCat('earrings');
   const minimal = getCat('minimal');
-  const pendants = getCat('pendants');
   const rings = getCat('rings');
   const silver = getCat('silver');
 
@@ -30,7 +29,7 @@ export default function CategoriesSection({ onSelectCategory, lang = 'en' }) {
           <div className="w-12 sm:w-16 h-[1.5px] bg-gold mx-auto mt-1 sm:mt-2" />
           <p className="text-xs sm:text-sm text-charcoal-muted leading-relaxed font-light pt-1 sm:pt-2 px-2">
             {lang === 'ta'
-              ? 'பழனி முருகனின் புனித வேல் டாலர்கள், பாரம்பரிய காசு மாலை, அட்டிகை, ஜிமிக்கி மற்றும் திருமண மணப்பெண் நகைத் தொகுப்புகள்.'
+              ? 'பாரம்பரிய காசு மாலை, அட்டிகை, ஜிமிக்கி, மோதிரம் மற்றும் திருமண மணப்பெண் நகைத் தொகுப்புகள்.'
               : 'Explore heritage creations fashioned in 22K gold, reflecting the devotional grace and splendour of South Indian celebrations.'}
           </p>
         </div>
@@ -61,7 +60,7 @@ export default function CategoriesSection({ onSelectCategory, lang = 'en' }) {
           ))}
         </div>
 
-        {/* 2. Dynamic Asymmetrical Magazine Bento Grid (Breaks the monotonous straight line) */}
+        {/* 2. Dynamic Asymmetrical Magazine Bento Grid */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
           {/* Tile 1: Bridal Feature (Wide cinematic card on mobile & desktop) */}
           {bridal && (
@@ -125,40 +124,26 @@ export default function CategoriesSection({ onSelectCategory, lang = 'en' }) {
             </div>
           )}
 
-          {/* Tile 6: Vel & Sacred Dollars (Wide Featured Card - Palani Special) */}
-          {pendants && (
-            <div className="col-span-2 lg:col-span-2">
-              <CategoryCard
-                category={pendants}
-                onSelect={onSelectCategory}
-                lang={lang}
-                isFeatured={true}
-                badge={lang === 'ta' ? 'பழனி முருகன் வேல் & கவசம்' : '🔱 Sacred Palani Murugan Heritage'}
-                aspectRatio="aspect-[16/9] sm:aspect-[16/10]"
-              />
-            </div>
-          )}
-
-          {/* Tile 7: Rings & Solitaires (Wide on desktop, 1-col on mobile) */}
+          {/* Tile 6: Rings & Solitaires */}
           {rings && (
-            <div className="col-span-1 lg:col-span-2">
+            <div className="col-span-1 lg:col-span-1">
               <CategoryCard
                 category={rings}
                 onSelect={onSelectCategory}
                 lang={lang}
-                aspectRatio="aspect-[3/4] lg:aspect-[16/10]"
+                aspectRatio="aspect-[3/4]"
               />
             </div>
           )}
 
-          {/* Tile 8: Silver & Pooja Heritage (Wide on desktop, 1-col on mobile) */}
+          {/* Tile 7: Silver & Pooja Heritage */}
           {silver && (
-            <div className="col-span-1 lg:col-span-2">
+            <div className="col-span-1 lg:col-span-1">
               <CategoryCard
                 category={silver}
                 onSelect={onSelectCategory}
                 lang={lang}
-                aspectRatio="aspect-[3/4] lg:aspect-[16/10]"
+                aspectRatio="aspect-[3/4]"
               />
             </div>
           )}

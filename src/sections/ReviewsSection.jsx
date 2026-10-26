@@ -45,18 +45,18 @@ export default function ReviewsSection() {
       rating: 5,
       date: "August 2026",
       verified: true,
-      text: "We traveled from Coimbatore to Palani specifically for their bridal gold collection. The transparency in demo pricing, weight estimation, and hallmark certifications gave our whole family immense confidence. Truly exceptional goldsmithing artistry."
+      text: "We traveled from Coimbatore to Palani specifically for their bridal gold collection. The transparency in gold pricing, weight estimation, and hallmark certifications gave our whole family immense confidence. Truly exceptional goldsmithing artistry."
     },
     {
       id: 4,
       name: "Revathi Annamalai",
       city: "Madurai",
-      category: "bangles",
-      item: "Classic Twisted Gold Valayal Pair",
+      category: "minimal",
+      item: "Modern Crescent Pearl Collar",
       rating: 5,
       date: "September 2026",
       verified: true,
-      text: "I bought a pair of twisted gold valayal for my sister's seemantham. The weight feels substantial yet the finish is wonderfully smooth with no rough edges. The gleam is 100% pure 22K yellow gold. Five stars without hesitation."
+      text: "I bought the modern crescent pearl collar for my sister's reception. The contemporary minimal look is wonderfully light yet made in pure 22K gold. Five stars without hesitation."
     },
     {
       id: 5,
@@ -138,7 +138,7 @@ export default function ReviewsSection() {
             { id: 'all', label: 'All Reviews' },
             { id: 'bridal', label: 'Bridal Harams' },
             { id: 'necklaces', label: 'Kasu Malas' },
-            { id: 'bangles', label: 'Traditional Valayal' },
+            { id: 'minimal', label: 'Minimal & Modern' },
             { id: 'earrings', label: 'Earrings & Studs' },
             { id: 'temple', label: 'Temple Suites' },
           ].map((tab) => (

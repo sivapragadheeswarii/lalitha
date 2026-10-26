@@ -427,31 +427,7 @@ export const PRODUCTS = [
     isBridal: true
   },
 
-  // 5. Sacred Murugan Vel Dollar
-  {
-    id: "prod-13",
-    name: "Sacred Palani Murugan Vel Dollar & Chain",
-    category: "Vel & Sacred Dollars",
-    categoryId: "pendants",
-    subCategory: "Temple Pendants",
-    demoPrice: "₹ 45,000",
-    isDemoPrice: true,
-    tag: "Palani Heritage",
-    rating: 5.0,
-    reviewCount: 56,
-    description: "Reverent 22K pure hallmarked gold pendant sculpted in the sacred form of Lord Murugan's holy Vel, representing courage, divine grace, and spiritual protection.",
-    details: {
-      finish: "22K 916 Yellow Gold High Polish",
-      motif: "Sacred Vel with Om & Trishul Detailing",
-      occasion: "Thaipusam, Panguni Uthiram, Daily Devotion & Gifting",
-      care: "Clean periodically with chamois polishing cloth"
-    },
-    image: "/images/vel-pendant.jpg",
-    featured: true,
-    isBridal: false
-  },
-
-  // 6. Gold Rings & Solitaires
+  // 5. Gold Rings & Solitaires
   {
     id: "prod-16",
     name: "Solitaire Halo Diamond Ring",

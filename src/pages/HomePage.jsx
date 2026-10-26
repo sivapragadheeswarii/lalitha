@@ -64,7 +64,7 @@ export default function HomePage({
       {/* 3. Trust Highlights */}
       <TrustSection lang={lang} />
 
-      {/* 4. Shop by Category (Gold, Bridal, Malas, Vel & Sacred Dollars, Bangles, Silver) */}
+      {/* 4. Shop by Category (Bridal, Gold, Malas, Earrings, Minimal, Rings, Silver) */}
       <CategoriesSection
         onSelectCategory={(catId) => {
           onSelectCategory(catId);

@@ -27,15 +27,6 @@ export const CATEGORIES = [
     description: "Captivating temple motifs, antique mango malas, and contemporary statement royal collars."
   },
   {
-    id: "pendants",
-    name: "Vel & Sacred Dollars",
-    nameTa: "வேல் & டாலர்கள்",
-    tagline: "Palani Murugan Vel & Temple Kavacham",
-    count: "20+ Designs",
-    image: "/images/vel-pendant.jpg",
-    description: "Sacred Palani Murugan Vel pendants, Om amulets, and divine deity kavachams in pure 22K gold."
-  },
-  {
     id: "minimal",
     name: "Minimal & Modern",
     nameTa: "நவீன & மினிமல் நகைகள்",
