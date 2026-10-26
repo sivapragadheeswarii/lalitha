@@ -102,9 +102,9 @@ export default function HeroSection({ onExploreCollections, onExploreBridal, lan
           <div className="lg:col-span-7 space-y-3 sm:space-y-6 text-center lg:text-left">
             {/* Top Pill */}
             <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-0.5 sm:py-1.5 bg-ivory border border-gold/40 shadow-xs">
-              <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-gold-dark animate-spin [animation-duration:8s]" />
-              <span className="text-[9px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-charcoal font-semibold">
-                Lalita Jewellers • Palani, Tamil Nadu
+              <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-gold-dark animate-spin [animation-duration:8s] shrink-0" />
+              <span className="text-[8px] xs:text-[9px] sm:text-[11px] uppercase tracking-[0.14em] sm:tracking-[0.22em] text-charcoal font-semibold">
+                {lang === 'ta' ? 'காலம் கடந்த அழகு • கொண்டாட்டங்களுக்கான ஆபரணங்கள்' : 'Timeless Elegance • Jewellery for Every Celebration'}
               </span>
             </div>
 
