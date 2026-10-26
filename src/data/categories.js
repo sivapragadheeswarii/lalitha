@@ -5,7 +5,7 @@ export const CATEGORIES = [
     nameTa: "தங்க நகைகள்",
     tagline: "Timeless 22K Heritage Artistry",
     count: "45+ Designs",
-    image: "/images/hero-jewellery.jpg",
+    image: "/images/twin-peacock-royal-collar.png",
     description: "Classic South Indian 916 hallmarked gold ornaments crafted for festivals, milestones, and daily grace."
   },
   {
@@ -14,7 +14,7 @@ export const CATEGORIES = [
     nameTa: "மணப்பெண் நகைகள்",
     tagline: "Grand Wedding Sets & Harams",
     count: "30+ Designs",
-    image: "/images/bridal-feature.jpg",
+    image: "/images/lakshmi-nakshi-choker.png",
     description: "Ornate bridal harams, oddiyanams, chokers, and matching sets destined for auspicious Tamil muhurthams."
   },
   {
@@ -23,7 +23,7 @@ export const CATEGORIES = [
     nameTa: "அட்டிகை & மாலைகள்",
     tagline: "Chokers, Malas & Kasu Malai",
     count: "40+ Designs",
-    image: "/images/lakshmi-kasu.jpg",
+    image: "/images/peacock-kemp-choker.jpg",
     description: "Captivating temple motifs, antique mango malas, and contemporary statement royal collars."
   },
   {

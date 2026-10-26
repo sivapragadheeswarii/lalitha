@@ -113,10 +113,10 @@ export default function HeroSection({ onExploreCollections, onExploreBridal, lan
               {/* Main Image Container */}
               <div className="relative overflow-hidden bg-charcoal border-2 border-gold shadow-2xl group rounded-sm">
                 <ImageWithFallback
-                  src="/images/hero-jewellery.jpg"
-                  alt="Lalita Jewellers Heritage 22K Gold Temple Haram with Red Rubies"
+                  src="/images/twin-peacock-royal-collar.png"
+                  alt="Lalita Jewellers Heritage 22K Royal Twin Peacock Sculpted Gold Collar"
                   aspectRatio="aspect-[4/5]"
-                  fallbackTitle="Lalita Temple Gold Suite"
+                  fallbackTitle="Royal Twin Peacock Collar"
                   priority={true}
                 />
 
@@ -136,10 +136,10 @@ export default function HeroSection({ onExploreCollections, onExploreBridal, lan
                       Temple Signature Masterpiece
                     </span>
                     <span className="font-serif text-sm sm:text-lg text-charcoal font-semibold">
-                      Ruby Temple Choker Suite
+                      Royal Twin Peacock (Mayil) Collar
                     </span>
                     <p className="text-[9px] sm:text-[10px] text-charcoal-muted">
-                      Handcrafted with 22K gold granulation & antique rubies
+                      Handcrafted with 22K gold repoussé & radiant emerald plumage
                     </p>
                   </div>
                   <button

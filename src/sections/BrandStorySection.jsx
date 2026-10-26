@@ -58,10 +58,10 @@ export default function BrandStorySection() {
             <div className="relative mx-auto max-w-md lg:max-w-none">
               <div className="relative overflow-hidden bg-ivory-200 border border-gold/40 shadow-xl">
                 <ImageWithFallback
-                  src="/images/bridal-chest.jpg"
-                  alt="Jewellery Artisanship and Detailing"
+                  src="/images/temple-spike-necklace.png"
+                  alt="Traditional South Indian Temple Jewellery Artisanship"
                   aspectRatio="aspect-[4/5]"
-                  fallbackTitle="Artisan Goldsmithing"
+                  fallbackTitle="Temple Goldsmithing Artistry"
                 />
               </div>
 

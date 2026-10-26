@@ -1,5 +1,117 @@
 export const PRODUCTS = [
-  // 1. Gold Necklaces & Harams
+  // 1. User Uploaded Flagship Heritage & Modern Pieces
+  {
+    id: "prod-user-1",
+    name: "Royal Twin Peacock (Mayil) Sculpted Gold Collar",
+    category: "Gold Jewellery",
+    categoryId: "gold",
+    subCategory: "Royal Temple Collar",
+    demoPrice: "₹ 3,95,000",
+    isDemoPrice: true,
+    tag: "Royal Masterpiece",
+    rating: 5.0,
+    reviewCount: 48,
+    description: "A monumental 22K temple gold royal collar featuring sculpted facing twin peacocks with glowing emerald eyes, cascading plume filigree, and a shimmering pear-cut pendant drop.",
+    details: {
+      finish: "22K Antique Temple Gold",
+      motif: "Twin Mayil (Peacocks) & Emerald Plumage",
+      occasion: "Grand Muhurtham, Royal Reception, Family Milestones",
+      care: "Store flat in dedicated velvet casket; avoid moisture"
+    },
+    image: "/images/twin-peacock-royal-collar.png",
+    featured: true,
+    isBridal: true
+  },
+  {
+    id: "prod-user-2",
+    name: "Mayil Kemp Antique Gold Choker & Earrings Suite",
+    category: "Necklaces & Malas",
+    categoryId: "necklaces",
+    subCategory: "Antique Choker Suite",
+    demoPrice: "₹ 2,85,000",
+    isDemoPrice: true,
+    tag: "Kemp Suite",
+    rating: 5.0,
+    reviewCount: 39,
+    description: "An exquisite 22K antique gold choker with twin peacock motifs, floral filigree, crescent moon medallion with radiant emerald, ruby kemp drops, and matching dangle ear stud.",
+    details: {
+      finish: "22K Antique Matte Gold",
+      motif: "Peacock & Kemp Crescent Medallion",
+      occasion: "Bridal Muhurtham, Festive Celebrations, Arangetram",
+      care: "Preserve in soft velvet sleeve"
+    },
+    image: "/images/peacock-kemp-choker.jpg",
+    featured: true,
+    isBridal: true
+  },
+  {
+    id: "prod-user-3",
+    name: "Heritage Lakshmi Nakshi Choker & Grand Jhumkas Suite",
+    category: "Bridal Jewellery",
+    categoryId: "bridal",
+    subCategory: "Temple Nakshi Parure",
+    demoPrice: "₹ 4,20,000",
+    isDemoPrice: true,
+    tag: "Bridal Signature",
+    rating: 5.0,
+    reviewCount: 52,
+    description: "An authentic South Indian bridal choker sculpted with central Goddess Lakshmi nakshi relief, flanked by temple peacocks and paired with matching grand tiered temple jhumkas.",
+    details: {
+      finish: "22K Temple Nakshi Antique Gold",
+      motif: "Goddess Lakshmi & Divine Peacocks",
+      occasion: "Wedding Muhurtham, Grand Reception",
+      care: "Store vertically or in padded velvet casket"
+    },
+    image: "/images/lakshmi-nakshi-choker.png",
+    featured: true,
+    isBridal: true
+  },
+  {
+    id: "prod-user-4",
+    name: "Contemporary Crescent Pearl Collar & Studs Suite",
+    category: "Gold Jewellery",
+    categoryId: "gold",
+    subCategory: "Modern Minimal Suite",
+    demoPrice: "₹ 1,45,000",
+    isDemoPrice: true,
+    tag: "Modern Minimal",
+    rating: 4.9,
+    reviewCount: 33,
+    description: "Modern minimal 22K gold necklace with delicate crescent links, natural pearl droplets, and matching crescent ear studs designed for contemporary elegance.",
+    details: {
+      finish: "22K Yellow Gold Fine Polish",
+      motif: "Crescent Links & Natural Pearl Drops",
+      occasion: "Evening Dinners, Contemporary Sarees, Special Occasions",
+      care: "Avoid contact with harsh perfumes and sprays"
+    },
+    image: "/images/modern-crescent-necklace.jpg",
+    featured: true,
+    isBridal: false
+  },
+  {
+    id: "prod-user-5",
+    name: "Thanjavur Ray Spike Necklace with Floral Kemp Pendant",
+    category: "Necklaces & Malas",
+    categoryId: "necklaces",
+    subCategory: "Spike Collar",
+    demoPrice: "₹ 2,15,000",
+    isDemoPrice: true,
+    tag: "Temple Ray Craft",
+    rating: 5.0,
+    reviewCount: 44,
+    description: "Classic South Indian gold ray spike collar centering a magnificent floral kemp ruby medallion with pearl chimes, complete with matching chandelier earrings.",
+    details: {
+      finish: "22K Yellow Antique Polish",
+      motif: "Sunburst Rays & Floral Kemp Center",
+      occasion: "Festivals, Family Weddings, Classical Music Season",
+      care: "Wipe with chamois cloth after wear"
+    },
+    image: "/images/temple-spike-necklace.png",
+    featured: true,
+    isBridal: true
+  },
+
+  // 2. Gold Necklaces & Harams
   {
     id: "prod-1",
     name: "Lakshmi Heritage Kasu Mala",
