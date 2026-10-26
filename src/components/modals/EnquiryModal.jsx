@@ -41,89 +41,82 @@ export default function EnquiryModal({ isOpen, onClose, selectedProduct = null }
       maxWidth="max-w-xl"
     >
       {submitted ? (
-        <div className="py-8 text-center space-y-4">
-          <div className="w-16 h-16 mx-auto rounded-full bg-gold-50 border border-gold/40 flex items-center justify-center text-maroon">
-            <CheckCircle className="w-8 h-8 text-gold-dark" />
+        <div className="py-6 text-center space-y-3">
+          <div className="w-14 h-14 mx-auto rounded-full bg-gold-50 border border-gold/40 flex items-center justify-center text-maroon">
+            <CheckCircle className="w-7 h-7 text-gold-dark" />
           </div>
-          <h4 className="font-serif text-2xl text-charcoal font-medium">
+          <h4 className="font-serif text-xl sm:text-2xl text-charcoal font-medium">
             Enquiry Received
           </h4>
-          <p className="text-sm text-charcoal-muted max-w-md mx-auto leading-relaxed">
-            Thank you, <span className="font-semibold text-charcoal">{formData.name}</span>. Your enquiry for {selectedProduct ? selectedProduct.name : 'custom jewellery guidance'} has been noted with reference <span className="font-mono text-xs bg-ivory-200 px-2 py-0.5 text-maroon font-bold">#LJ-{Math.floor(100000 + Math.random() * 900000)}</span>.
+          <p className="text-xs sm:text-sm text-charcoal-muted max-w-md mx-auto leading-relaxed">
+            Thank you, <span className="font-semibold text-charcoal">{formData.name}</span>. Your enquiry for {selectedProduct ? selectedProduct.name : 'custom jewellery guidance'} has been recorded with reference <span className="font-mono text-xs bg-ivory-200 px-2 py-0.5 text-maroon font-bold">#LJ-{Math.floor(100000 + Math.random() * 900000)}</span>.
           </p>
-          <div className="p-3 bg-ivory-100 border border-gold-200 text-xs text-charcoal-muted max-w-md mx-auto">
-            (Demo Mode Note: In live deployment, notifications are forwarded directly to the shop’s sales team in Palani.)
+          <div className="p-2.5 bg-ivory-100 border border-gold-200 text-[11px] text-charcoal-muted max-w-md mx-auto">
+            Our Palani showroom goldsmiths and sales associates will contact you shortly via WhatsApp / Phone.
           </div>
-          <div className="pt-4">
+          <div className="pt-2">
             <button
               onClick={handleReset}
-              className="px-6 py-2.5 bg-maroon text-ivory text-xs uppercase tracking-widest font-semibold hover:bg-maroon-light transition-all"
+              className="px-6 py-2 bg-maroon text-ivory text-xs uppercase tracking-widest font-semibold hover:bg-maroon-light transition-all"
             >
               Close
             </button>
           </div>
         </div>
       ) : (
-        <div className="space-y-6">
-          {/* Status of Direct WhatsApp Contact */}
-          {hasWhatsAppConfigured ? (
-            <div className="p-4 bg-emerald-50 border border-emerald-200 text-xs text-emerald-900 rounded-none space-y-2">
-              <div className="flex items-center gap-2 font-medium">
-                <MessageCircle className="w-4 h-4 text-emerald-700" />
-                <span>Instant WhatsApp Enquiry Active</span>
+        <div className="space-y-4">
+          {/* Palani Showroom WhatsApp Direct Strip */}
+          <div className="p-2.5 xs:p-3 bg-emerald-50 border border-emerald-200/80 rounded-xs flex items-center justify-between gap-2.5">
+            <div className="flex items-center gap-2 min-w-0">
+              <div className="w-7 h-7 rounded-full bg-[#25D366] text-white flex items-center justify-center shrink-0 shadow-xs">
+                <MessageCircle className="w-3.5 h-3.5 fill-white text-[#25D366]" />
               </div>
-              <p className="text-emerald-800">
-                You can connect directly with our store associates on WhatsApp for prompt assistance with design photos and custom weights.
-              </p>
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-700 text-white font-medium text-xs rounded hover:bg-emerald-800 transition-colors mt-1"
-              >
-                <MessageCircle className="w-3.5 h-3.5" />
-                Chat via WhatsApp Now
-              </a>
-            </div>
-          ) : (
-            <div className="p-4 bg-ivory-200/80 border-l-2 border-gold text-xs space-y-1.5 text-charcoal-muted">
-              <div className="flex items-center gap-2 font-medium text-charcoal">
-                <AlertCircle className="w-4 h-4 text-gold-dark" />
-                <span>Direct WhatsApp Contact Configuration</span>
+              <div className="min-w-0">
+                <span className="text-[11px] xs:text-xs font-semibold text-emerald-950 block truncate">
+                  Palani Showroom WhatsApp
+                </span>
+                <span className="text-[9px] xs:text-[10px] text-emerald-800 block truncate">
+                  Chat directly for instant design photos & weights
+                </span>
               </div>
-              <p className="text-[11px] leading-relaxed">
-                Direct WhatsApp redirection is pending configuration in <code className="bg-ivory-300 px-1 py-0.5 text-maroon text-[10px]">brandConfig.js</code> (phone number placeholder). You can test the demo consultation request below.
-              </p>
             </div>
-          )}
+            <a
+              href={whatsappUrl || 'https://wa.me/919443722255?text=Vanakkam%20Lalita%20Jewellers'}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-1.5 px-2.5 xs:px-3 py-1.5 bg-[#25D366] hover:bg-[#1ebe5b] text-white text-[10px] xs:text-xs font-semibold transition-all shrink-0 rounded-xs shadow-xs"
+            >
+              <span>Chat Now</span>
+            </a>
+          </div>
 
           {/* Enquiry Form */}
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-3.5">
             {selectedProduct && (
-              <div className="flex items-center gap-3 p-3 bg-ivory-100 border border-charcoal-border/50">
-                <div className="w-12 h-12 bg-ivory-200 shrink-0 overflow-hidden">
+              <div className="flex items-center gap-3 p-2.5 bg-ivory-100 border border-charcoal-border/50">
+                <div className="w-11 h-11 bg-ivory-200 shrink-0 overflow-hidden">
                   <img
                     src={selectedProduct.image}
                     alt={selectedProduct.name}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="text-xs">
-                  <span className="text-gold-dark uppercase tracking-wider text-[10px] block">
+                <div className="text-xs min-w-0">
+                  <span className="text-gold-dark uppercase tracking-wider text-[9px] block">
                     Selected Ornament
                   </span>
-                  <span className="font-serif text-sm font-medium text-charcoal block">
+                  <span className="font-serif text-xs sm:text-sm font-medium text-charcoal block truncate">
                     {selectedProduct.name}
                   </span>
-                  <span className="text-charcoal-muted text-[11px]">
-                    {selectedProduct.category} • {selectedProduct.demoPrice} (Demo)
+                  <span className="text-charcoal-muted text-[10px] xs:text-[11px] block truncate">
+                    {selectedProduct.category} • {selectedProduct.demoPrice}
                   </span>
                 </div>
               </div>
             )}
 
             <div>
-              <label className="block text-xs uppercase tracking-wider text-charcoal-muted mb-1 font-medium">
+              <label className="block text-[11px] xs:text-xs uppercase tracking-wider text-charcoal-muted mb-1 font-medium">
                 Your Full Name <span className="text-maroon">*</span>
               </label>
               <input
@@ -132,12 +125,12 @@ export default function EnquiryModal({ isOpen, onClose, selectedProduct = null }
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 placeholder="e.g. S. Meenakshi"
-                className="w-full px-3.5 py-2.5 text-sm bg-white border border-charcoal-border focus:border-gold focus:outline-none transition-colors"
+                className="w-full px-3 py-2 text-xs sm:text-sm bg-white border border-charcoal-border focus:border-gold focus:outline-none transition-colors"
               />
             </div>
 
             <div>
-              <label className="block text-xs uppercase tracking-wider text-charcoal-muted mb-1 font-medium">
+              <label className="block text-[11px] xs:text-xs uppercase tracking-wider text-charcoal-muted mb-1 font-medium">
                 Mobile / WhatsApp Number <span className="text-maroon">*</span>
               </label>
               <input
@@ -146,18 +139,18 @@ export default function EnquiryModal({ isOpen, onClose, selectedProduct = null }
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                 placeholder="e.g. +91 98765 43210"
-                className="w-full px-3.5 py-2.5 text-sm bg-white border border-charcoal-border focus:border-gold focus:outline-none transition-colors"
+                className="w-full px-3 py-2 text-xs sm:text-sm bg-white border border-charcoal-border focus:border-gold focus:outline-none transition-colors"
               />
             </div>
 
             <div>
-              <label className="block text-xs uppercase tracking-wider text-charcoal-muted mb-1 font-medium">
+              <label className="block text-[11px] xs:text-xs uppercase tracking-wider text-charcoal-muted mb-1 font-medium">
                 Occasion / Requirement
               </label>
               <select
                 value={formData.occasion}
                 onChange={(e) => setFormData({ ...formData, occasion: e.target.value })}
-                className="w-full px-3.5 py-2.5 text-sm bg-white border border-charcoal-border focus:border-gold focus:outline-none transition-colors"
+                className="w-full px-3 py-2 text-xs sm:text-sm bg-white border border-charcoal-border focus:border-gold focus:outline-none transition-colors"
               >
                 <option value="Bridal & Wedding">Bridal & Wedding Muhurtham</option>
                 <option value="Temple Festival & Pooja">Temple Festival & Pooja</option>
@@ -168,15 +161,15 @@ export default function EnquiryModal({ isOpen, onClose, selectedProduct = null }
             </div>
 
             <div>
-              <label className="block text-xs uppercase tracking-wider text-charcoal-muted mb-1 font-medium">
+              <label className="block text-[11px] xs:text-xs uppercase tracking-wider text-charcoal-muted mb-1 font-medium">
                 Specific Customizations or Notes
               </label>
               <textarea
-                rows={3}
+                rows={2}
                 value={formData.notes}
                 onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                placeholder="Share your preferred gold weight, design adjustments, or visit timing..."
-                className="w-full px-3.5 py-2.5 text-sm bg-white border border-charcoal-border focus:border-gold focus:outline-none transition-colors resize-none"
+                placeholder="Preferred gold weight, length adjustments, or visit timing..."
+                className="w-full px-3 py-2 text-xs sm:text-sm bg-white border border-charcoal-border focus:border-gold focus:outline-none transition-colors resize-none"
               />
             </div>
 
@@ -184,20 +177,20 @@ export default function EnquiryModal({ isOpen, onClose, selectedProduct = null }
               <p className="text-xs text-maroon font-medium">{errorMsg}</p>
             )}
 
-            <div className="pt-2 flex items-center justify-end gap-3">
+            <div className="pt-1.5 flex items-center justify-end gap-2.5">
               <button
                 type="button"
                 onClick={handleReset}
-                className="px-5 py-2.5 text-xs uppercase tracking-wider text-charcoal-muted hover:text-charcoal transition-colors"
+                className="px-4 py-2 text-xs uppercase tracking-wider text-charcoal-muted hover:text-charcoal transition-colors"
               >
                 Cancel
               </button>
               <button
                 type="submit"
-                className="inline-flex items-center gap-2 px-6 py-2.5 bg-maroon text-ivory text-xs uppercase tracking-widest font-semibold hover:bg-maroon-light transition-all shadow-sm"
+                className="inline-flex items-center gap-1.5 px-5 py-2 bg-maroon text-ivory text-xs uppercase tracking-wider font-semibold hover:bg-maroon-light transition-all shadow-sm active:scale-95"
               >
                 <Send className="w-3.5 h-3.5 text-gold-light" />
-                Submit Demo Enquiry
+                Submit Enquiry
               </button>
             </div>
           </form>

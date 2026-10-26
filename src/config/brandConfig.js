@@ -21,9 +21,9 @@ export const BRAND_CONFIG = {
   
   // Contact Configuration:
   // Enter a valid 10-12 digit WhatsApp number with country code (e.g. "919876543210") when ready to enable direct WhatsApp enquiries.
-  whatsappNumber: null, // Set to string when configured e.g. "919000000000"
-  phoneDisplay: null, // Set to display number e.g. "+91 (0) 4545 XXXXXX"
-  emailContact: null, // Set to email e.g. "enquiry@lalitajewellers.com"
+  whatsappNumber: "919443722255", // Palani showroom WhatsApp
+  phoneDisplay: "+91 94437 22255",
+  emailContact: "enquiry@lalitajewellers.com",
   
   // Social Media Links (Placeholders - update with real profiles when active)
   socialLinks: {

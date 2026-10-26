@@ -28,14 +28,14 @@ export default function Modal({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-2 xs:p-4 sm:p-6 overflow-y-auto"
+      className="fixed inset-0 z-50 overflow-y-auto flex items-center justify-center p-3 xs:p-4 sm:p-6 pt-14 pb-8 sm:py-6"
       role="dialog"
       aria-modal="true"
       aria-labelledby="modal-title"
     >
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-charcoal/70 backdrop-blur-sm transition-opacity"
+        className="fixed inset-0 bg-charcoal/75 backdrop-blur-sm transition-opacity"
         onClick={onClose}
         aria-hidden="true"
       />
@@ -43,22 +43,22 @@ export default function Modal({
       {/* Modal Card */}
       <div
         ref={modalRef}
-        className={`relative w-full ${maxWidth} bg-ivory rounded-none border border-gold/30 shadow-2xl z-10 overflow-hidden transform transition-all animate-slide-up`}
+        className={`relative w-full ${maxWidth} my-auto bg-ivory rounded-xs border border-gold/40 shadow-2xl z-10 overflow-hidden transform transition-all animate-slide-up max-h-[85vh] sm:max-h-[90vh] flex flex-col`}
       >
         {/* Subtle Top Gold Bar */}
-        <div className="h-1 bg-gold-gradient w-full" />
+        <div className="h-1 bg-gold-gradient w-full shrink-0" />
 
         {/* Header if title provided */}
         {(title || subtitle) && (
-          <div className="flex items-start justify-between px-3.5 xs:px-5 sm:px-6 py-3.5 sm:py-5 border-b border-charcoal-border/50">
-            <div>
+          <div className="flex items-start justify-between px-4 sm:px-6 py-3 sm:py-4 border-b border-charcoal-border/50 bg-ivory shrink-0">
+            <div className="min-w-0 pr-2">
               {title && (
-                <h3 id="modal-title" className="font-serif text-lg xs:text-xl sm:text-2xl text-charcoal font-medium">
+                <h3 id="modal-title" className="font-serif text-base xs:text-lg sm:text-2xl text-charcoal font-medium leading-snug truncate">
                   {title}
                 </h3>
               )}
               {subtitle && (
-                <p className="text-[10px] xs:text-xs text-charcoal-muted tracking-wider uppercase mt-1">
+                <p className="text-[9px] xs:text-[10px] sm:text-xs text-charcoal-muted tracking-wider uppercase mt-0.5 truncate">
                   {subtitle}
                 </p>
               )}
@@ -66,7 +66,7 @@ export default function Modal({
             <button
               onClick={onClose}
               aria-label="Close dialog"
-              className="p-1.5 text-charcoal-muted hover:text-maroon transition-colors hover:bg-gold-50"
+              className="p-1.5 text-charcoal-muted hover:text-maroon transition-colors hover:bg-gold-50 rounded-full shrink-0 ml-1"
             >
               <X className="w-5 h-5" />
             </button>
@@ -85,7 +85,7 @@ export default function Modal({
         )}
 
         {/* Content */}
-        <div className="p-3 xs:p-4.5 sm:p-6 max-h-[82vh] overflow-y-auto">
+        <div className="p-3.5 xs:p-5 sm:p-6 overflow-y-auto flex-1 overscroll-contain">
           {children}
         </div>
       </div>
