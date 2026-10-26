@@ -1,6 +1,6 @@
 # LALITA JEWELLERS — Fine South Indian Jewellery, Palani, Tamil Nadu
 
-A complete, premium, production-quality frontend demo website for **Lalita Jewellers**, situated in the temple city of Palani, Tamil Nadu. Built with React, Tailwind CSS, Lucide React, and inspired by modern luxury South Indian jewellery craftsmanship (benchmarked against PPC Jewelry).
+A complete, premium, production-quality frontend demo website for **Lalita Jewellers**, situated in the temple city of Palani, Tamil Nadu. Built with React, Tailwind CSS, Lucide React, and celebrating timeless South Indian temple jewellery craftsmanship.
 
 ![Lalita Jewellers](public/images/bridal-feature.jpg)
 

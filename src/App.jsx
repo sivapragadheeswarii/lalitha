@@ -106,7 +106,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen flex flex-col bg-ivory text-charcoal font-sans selection:bg-gold-200 selection:text-maroon pb-14 md:pb-0">
-      {/* 1. Live Gold Rate Marquee Announcement Bar (like PPC Jewelry) */}
+      {/* 1. Live Gold Rate Marquee Announcement Bar */}
       <AnnouncementBar onOpenCalculator={() => setIsCalculatorOpen(true)} />
 
       {/* 2. Main Navigation Bar with Language Toggle & Actions */}
@@ -148,7 +148,7 @@ export default function App() {
       {/* 5. Floating Quick Action Hub (WhatsApp + Call + Scroll to Top) */}
       <FloatingContactHub onOpenEnquiry={() => handleEnquire(null)} />
 
-      {/* 6. Fixed Bottom App Navigation Bar for Mobile (like PPC Jewelry) */}
+      {/* 6. Fixed Bottom App Navigation Bar for Mobile */}
       <BottomNav
         wishlistCount={wishlistCount}
         cartCount={cartCount}

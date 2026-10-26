@@ -23,7 +23,7 @@ export const CATEGORIES = [
     nameTa: "அட்டிகை & மாலைகள்",
     tagline: "Chokers, Malas & Kasu Malai",
     count: "40+ Designs",
-    image: "/images/thanjavur-haram.jpg",
+    image: "/images/kemp-necklace.jpg",
     description: "Captivating temple motifs, antique mango malas, and contemporary statement royal collars."
   },
   {
@@ -32,7 +32,7 @@ export const CATEGORIES = [
     nameTa: "வேல் & டாலர்கள்",
     tagline: "Palani Murugan Vel & Temple Kavacham",
     count: "20+ Designs",
-    image: "https://res.cloudinary.com/yhltoo7y/image/upload/v1792316052/ppc-jewelry/products/csy8tyfj5lj966bmwz16.webp",
+    image: "/images/vel-pendant.jpg",
     description: "Sacred Palani Murugan Vel pendants, Om amulets, and divine deity kavachams in pure 22K gold."
   },
   {
@@ -41,17 +41,17 @@ export const CATEGORIES = [
     nameTa: "வளையல் & காப்புகள்",
     tagline: "Kadas, Valayal & Broad Bangles",
     count: "35+ Designs",
-    image: "/images/gold-valayal.jpg",
+    image: "/images/gold-kada-bangles.jpg",
     description: "Handcrafted filigree bangles, temple nakshi kadas, twisted gold valayal, and men's singam-mugam kadas."
   },
   {
     id: "earrings",
     name: "Earrings & Jhumkas",
     nameTa: "ஜிமிக்கி & கம்மல்",
-    tagline: "Antique Jhumkas & Diamond Studs",
+    tagline: "Antique Jhumkas & Gold Studs",
     count: "50+ Designs",
-    image: "/images/floral-earrings.jpg",
-    description: "Delicate studs, tiered wedding jhumkas, ruby-studded chandbalis, and graceful sui dhagas."
+    image: "/images/gold-jhumka.jpg",
+    description: "Tiered wedding jhumkas, ruby floral studs, delicate chandelier earrings, and traditional drops."
   },
   {
     id: "rings",
@@ -68,7 +68,7 @@ export const CATEGORIES = [
     nameTa: "வெள்ளி & பூஜை பொருட்கள்",
     tagline: "Kaal Thandai, Metti & Sacred Lamps",
     count: "28+ Designs",
-    image: "https://res.cloudinary.com/yhltoo7y/image/upload/v1789448360/ppc-jewelry/products/gt9vlbkbdzkft1a7ftn1.webp",
-    description: "Traditional bridal kaal thandai anklets, pure silver metti, auspicious Mahameru, and temple kuthu vilakku."
+    image: "/images/silver-anklet.jpg",
+    description: "Traditional bridal kaal thandai anklets, pure silver metti, auspicious Mahameru, and temple pooja items."
   }
 ];

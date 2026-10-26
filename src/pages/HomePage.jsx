@@ -55,7 +55,7 @@ export default function HomePage({
         lang={lang}
       />
 
-      {/* 2. Live Palani Benchmark Gold & Silver Rates Strip (like PPC Jewelry) */}
+      {/* 2. Live Palani Benchmark Gold & Silver Rates Strip */}
       <GoldRateBannerSection
         onOpenCalculator={onOpenCalculator}
         lang={lang}
