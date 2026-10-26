@@ -110,6 +110,116 @@ export const PRODUCTS = [
     featured: true,
     isBridal: true
   },
+  {
+    id: "prod-user-6",
+    name: "Radha-Krishna & Lakshmi Temple Celebration Choker Suite",
+    category: "Bridal Jewellery",
+    categoryId: "bridal",
+    subCategory: "Temple Celebration Choker",
+    demoPrice: "₹ 3,65,000",
+    isDemoPrice: true,
+    tag: "Temple Celebration",
+    rating: 5.0,
+    reviewCount: 41,
+    description: "A celebratory 22K temple antique choker featuring Goddess Lakshmi and divine motifs with floral nakshi work, ruby bell jhumka drop, and matching chandelier jhumkas.",
+    details: {
+      finish: "22K Antique Matte Gold",
+      motif: "Divine Deity Nakshi & Bell Jhumkas",
+      occasion: "Wedding Muhurtham, Seemantham, Sangeet & Arangetram",
+      care: "Store in dry velvet casket"
+    },
+    image: "/images/temple-celebration-choker.jpg",
+    featured: true,
+    isBridal: true
+  },
+  {
+    id: "prod-user-7",
+    name: "Antique Kemp Bead-Chime Collar & Bell Jhumkis",
+    category: "Necklaces & Malas",
+    categoryId: "necklaces",
+    subCategory: "Beaded Kemp Choker",
+    demoPrice: "₹ 1,75,000",
+    isDemoPrice: true,
+    tag: "Heritage Kemp",
+    rating: 4.9,
+    reviewCount: 36,
+    description: "Classic South Indian gold bead-chime collar necklace adorned with cabochon rubies and emeralds, paired with traditional bell jhumkis on natural linen.",
+    details: {
+      finish: "22K Antique Yellow Gold",
+      motif: "Gold Chime Beads & Ruby Kemp",
+      occasion: "Festivals, Family Weddings, Classical Bharatanatyam",
+      care: "Wipe with lint-free chamois cloth"
+    },
+    image: "/images/antique-kemp-bead-necklace.jpg",
+    featured: true,
+    isBridal: false
+  },
+  {
+    id: "prod-user-8",
+    name: "Emerald-Cut Green Gemstone & Diamond Gold Choker",
+    category: "Gold Jewellery",
+    categoryId: "gold",
+    subCategory: "Festive Emerald Choker",
+    demoPrice: "₹ 2,45,000",
+    isDemoPrice: true,
+    tag: "Emerald Luxury",
+    rating: 4.9,
+    reviewCount: 29,
+    description: "A sophisticated festive collar necklace featuring vibrant emerald-cut green gemstones encircled by sparkling cubic zirconia clusters, paired with matching chandelier drop earrings.",
+    details: {
+      finish: "22K Yellow Gold High Polish",
+      motif: "Emerald-Cut Stones & Cluster Pavé",
+      occasion: "Receptions, Cocktail Evenings, Festive Soirées",
+      care: "Store flat in velvet-lined box"
+    },
+    image: "/images/emerald-gemstone-choker.jpg",
+    featured: true,
+    isBridal: true
+  },
+  {
+    id: "prod-user-9",
+    name: "Golden Tissue Silk Muhurtham Lakshmi Nakshi Parure",
+    category: "Bridal Jewellery",
+    categoryId: "bridal",
+    subCategory: "Grand Nakshi Parure",
+    demoPrice: "₹ 4,50,000",
+    isDemoPrice: true,
+    tag: "Muhurtham Masterpiece",
+    rating: 5.0,
+    reviewCount: 57,
+    description: "An awe-inspiring South Indian bridal temple choker sculpted with central Goddess Lakshmi nakshi relief and hanging green gemstone beads, paired with matching tiered temple jhumkas.",
+    details: {
+      finish: "22K Temple Nakshi Antique Gold",
+      motif: "Goddess Lakshmi, Peacocks & Emerald Beads",
+      occasion: "Auspicious Wedding Muhurtham, Royal Reception",
+      care: "Store vertically suspended or in padded chest"
+    },
+    image: "/images/golden-tissue-nakshi-bride.png",
+    featured: true,
+    isBridal: true
+  },
+  {
+    id: "prod-user-10",
+    name: "Gaja Elephant & Lakshmi Heritage Pearl Collar Suite",
+    category: "Necklaces & Malas",
+    categoryId: "necklaces",
+    subCategory: "Gaja Heritage Collar",
+    demoPrice: "₹ 3,25,000",
+    isDemoPrice: true,
+    tag: "Gaja Heritage",
+    rating: 5.0,
+    reviewCount: 49,
+    description: "An opulent antique gold collar featuring twin royal Gaja elephants honoring Goddess Lakshmi, studded with rubies, natural pearls, and emerald drops with matching elephant jhumkas on plum leather.",
+    details: {
+      finish: "22K Antique Temple Gold",
+      motif: "Royal Gaja Elephants, Lakshmi & Natural Pearls",
+      occasion: "Bridal Muhurtham, Seemantham, Varalakshmi Vratham",
+      care: "Avoid contact with cosmetics; wipe dry after wear"
+    },
+    image: "/images/gaja-elephant-lakshmi-necklace.jpg",
+    featured: true,
+    isBridal: true
+  },
 
   // 2. Gold Necklaces & Harams
   {

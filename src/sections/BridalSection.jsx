@@ -3,6 +3,44 @@ import { ArrowRight, Sparkles, Crown, CheckCircle2 } from 'lucide-react';
 import ImageWithFallback from '../components/common/ImageWithFallback';
 
 export default function BridalSection({ onExploreBridal, onEnquireBridal, lang = 'en' }) {
+  const bridalLooks = [
+    {
+      id: 'look-1',
+      title: 'Palani Muhurtham Kasu & Haram Suite',
+      subtitle: '22K 916 Temple Antique Gold • Full Bridal Suite',
+      badge: 'Signature Look 01',
+      image: '/images/bridal-feature.jpg',
+      alt: 'Traditional South Indian Bride in Lalita Jewellers Bridal Gold Jewellery'
+    },
+    {
+      id: 'look-2',
+      title: 'Golden Tissue Lakshmi Nakshi Bride',
+      subtitle: '22K Antique Nakshi Collar & Tiered Temple Jhumkas',
+      badge: 'Signature Look 02',
+      image: '/images/golden-tissue-nakshi-bride.png',
+      alt: 'Bride in Golden Saree wearing Lakshmi Nakshi Choker & Jhumkas'
+    },
+    {
+      id: 'look-3',
+      title: 'Temple Radha-Krishna Celebration Suite',
+      subtitle: '22K Temple Flora Choker & Grand Jhumkas',
+      badge: 'Signature Look 03',
+      image: '/images/temple-celebration-choker.jpg',
+      alt: 'Joyful South Indian Bride in Temple Celebration Choker'
+    },
+    {
+      id: 'look-4',
+      title: 'Gaja Elephant & Lakshmi Heirloom Set',
+      subtitle: '22K Gold Repoussé, Rubies, Emeralds & Natural Pearls',
+      badge: 'Signature Look 04',
+      image: '/images/gaja-elephant-lakshmi-necklace.jpg',
+      alt: 'Royal Gaja Elephant & Lakshmi Heirloom Choker'
+    }
+  ];
+
+  const [activeLookIndex, setActiveLookIndex] = React.useState(0);
+  const activeLook = bridalLooks[activeLookIndex];
+
   const bridalHighlights = [
     lang === 'ta' ? "பாரம்பரிய 22K 916 ஹால்மார்க் தங்கம்" : "Traditional 22K 916 Hallmarked Gold",
     lang === 'ta' ? "தஞ்சாவூர் & கோவில் நக்ஷி கைவினை கலை" : "Heirloom Thanjavur & Temple Nakshi Craft",
@@ -26,10 +64,11 @@ export default function BridalSection({ onExploreBridal, onEnquireBridal, lang =
               
               <div className="relative bg-charcoal border-2 border-gold/60 shadow-xl overflow-hidden group rounded-sm">
                 <ImageWithFallback
-                  src="/images/bridal-feature.jpg"
-                  alt="Traditional South Indian Bride in Lalita Jewellers Bridal Gold Jewellery"
+                  key={activeLook.image}
+                  src={activeLook.image}
+                  alt={activeLook.alt}
                   aspectRatio="aspect-[3/4]"
-                  fallbackTitle="Bridal Muhurtham Collection"
+                  fallbackTitle={activeLook.title}
                   priority={true}
                 />
 
@@ -45,10 +84,10 @@ export default function BridalSection({ onExploreBridal, onEnquireBridal, lang =
                         <span>Auspicious Wedding Adornments</span>
                       </div>
                       <h4 className="font-serif text-sm sm:text-xl text-charcoal font-medium mt-0.5 sm:mt-1">
-                        Palani Muhurtham Bridal Haram & Kasu Suite
+                        {activeLook.title}
                       </h4>
                       <p className="text-[9px] sm:text-[11px] text-charcoal-muted">
-                        22K 916 Temple Antique Gold • Handcrafted Heritage
+                        {activeLook.subtitle}
                       </p>
                     </div>
 
@@ -64,8 +103,34 @@ export default function BridalSection({ onExploreBridal, onEnquireBridal, lang =
                 {/* Floating Top Pill Badge */}
                 <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-maroon/95 backdrop-blur-sm text-ivory px-2.5 sm:px-3.5 py-1 sm:py-1.5 border border-gold/40 text-[9px] sm:text-[10px] tracking-widest uppercase font-semibold flex items-center gap-1.5 shadow-md">
                   <Sparkles className="w-3 h-3 text-gold-light animate-pulse" />
-                  <span>Bridal Signature 2026</span>
+                  <span>{activeLook.badge}</span>
                 </div>
+              </div>
+
+              {/* Look Thumbnails Selector */}
+              <div className="flex items-center gap-2.5 mt-3 sm:mt-4 overflow-x-auto no-scrollbar pb-1">
+                <span className="text-[10px] uppercase tracking-widest text-charcoal-muted font-semibold shrink-0">
+                  Looks:
+                </span>
+                {bridalLooks.map((look, idx) => (
+                  <button
+                    key={look.id}
+                    onClick={() => setActiveLookIndex(idx)}
+                    className={`relative w-14 h-16 sm:w-16 sm:h-20 shrink-0 rounded-xs overflow-hidden border-2 transition-all ${
+                      activeLookIndex === idx
+                        ? 'border-gold shadow-md scale-105'
+                        : 'border-charcoal-border/50 opacity-70 hover:opacity-100 hover:border-gold-300'
+                    }`}
+                    title={look.title}
+                  >
+                    <img src={look.image} alt={look.title} className="w-full h-full object-cover" />
+                    {activeLookIndex === idx && (
+                      <div className="absolute inset-x-0 bottom-0 bg-maroon/90 text-ivory text-[8px] py-0.5 text-center font-semibold uppercase">
+                        Active
+                      </div>
+                    )}
+                  </button>
+                ))}
               </div>
             </div>
           </div>
