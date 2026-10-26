@@ -20,7 +20,7 @@ export default function AnnouncementBar({ onOpenCalculator }) {
           {/* Live Indicator Badge */}
           <div className="hidden sm:flex items-center gap-1.5 px-2 py-0.5 bg-maroon/80 border border-gold/40 text-[10px] uppercase font-bold tracking-wider text-gold-light shrink-0">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping inline-block" />
-            <span>Today's Rate (Demo)</span>
+            <span>Today's Rate</span>
           </div>
 
           {/* Continuous Running Marquee Rate Strip */}

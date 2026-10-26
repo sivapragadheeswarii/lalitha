@@ -109,19 +109,19 @@ export default function Footer({ onSelectCategory, onOpenEnquiry }) {
                 onClick={onOpenEnquiry}
                 className="w-full py-2 bg-maroon text-ivory text-[10px] uppercase tracking-wider font-semibold hover:bg-maroon-light transition-colors"
               >
-                Open Demo Enquiry Form
+                Open Enquiry Form
               </button>
             </div>
           </div>
         </div>
 
-        {/* Bottom Bar: Copyright & Demo Notice */}
+        {/* Bottom Bar: Copyright */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-ivory/60">
           <p className="text-center md:text-left">
             © {currentYear} {BRAND_CONFIG.legalName}. Palani, Tamil Nadu, India. All rights reserved.
           </p>
-          <div className="text-[11px] text-center md:text-right text-ivory/50">
-            <span>Illustrative Frontend Concept Demo • Not live e-commerce</span>
+          <div className="text-[11px] text-center md:text-right text-gold-light/70 font-medium">
+            <span>22K BIS 916 Hallmarked Jewellery Showroom</span>
           </div>
         </div>
       </div>

@@ -1,13 +1,26 @@
 import React from 'react';
 import CategoryCard from '../components/product/CategoryCard';
 import { CATEGORIES } from '../data/categories';
+import { Sparkles } from 'lucide-react';
 
 export default function CategoriesSection({ onSelectCategory, lang = 'en' }) {
+  // Find categories by id for deliberate, beautiful bento placement
+  const getCat = (id) => CATEGORIES.find((c) => c.id === id);
+
+  const bridal = getCat('bridal');
+  const gold = getCat('gold');
+  const necklaces = getCat('necklaces');
+  const earrings = getCat('earrings');
+  const minimal = getCat('minimal');
+  const pendants = getCat('pendants');
+  const rings = getCat('rings');
+  const silver = getCat('silver');
+
   return (
     <section id="categories" className="py-12 sm:py-20 bg-ivory-50 border-b border-charcoal-border/30">
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-14 space-y-2 sm:space-y-3">
+        <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-10 space-y-2 sm:space-y-3">
           <span className="text-[9px] sm:text-[10px] uppercase tracking-[0.25em] text-gold-dark font-semibold">
             {lang === 'ta' ? 'அழகிய நகை பிரிவுகள்' : 'Curated Expressions'}
           </span>
@@ -22,16 +35,133 @@ export default function CategoriesSection({ onSelectCategory, lang = 'en' }) {
           </p>
         </div>
 
-        {/* Categories Grid (2 columns on mobile, 4 on desktop) */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-6">
-          {CATEGORIES.map((category) => (
-            <CategoryCard
-              key={category.id}
-              category={category}
-              onSelect={onSelectCategory}
-              lang={lang}
-            />
+        {/* 1. Quick Story Avatars / Category Bubbles Strip (Mobile & Tablet) */}
+        <div className="flex items-center gap-3 sm:gap-4 overflow-x-auto no-scrollbar pb-3 mb-6 sm:mb-8 px-1">
+          {CATEGORIES.map((cat) => (
+            <button
+              key={cat.id}
+              onClick={() => onSelectCategory(cat.id)}
+              className="flex flex-col items-center gap-1.5 shrink-0 group focus:outline-hidden"
+              aria-label={`Jump to ${cat.name}`}
+            >
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full p-0.5 bg-gradient-to-tr from-gold to-maroon group-hover:scale-105 transition-transform duration-300 shadow-sm">
+                <div className="w-full h-full rounded-full overflow-hidden bg-charcoal border-2 border-ivory">
+                  <img
+                    src={cat.image}
+                    alt={cat.name}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <span className="text-[10px] sm:text-[11px] font-medium text-charcoal group-hover:text-maroon whitespace-nowrap tracking-tight transition-colors">
+                {lang === 'ta' && cat.nameTa ? cat.nameTa : cat.name.split(' ')[0]}
+              </span>
+            </button>
           ))}
+        </div>
+
+        {/* 2. Dynamic Asymmetrical Magazine Bento Grid (Breaks the monotonous straight line) */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+          {/* Tile 1: Bridal Feature (Wide cinematic card on mobile & desktop) */}
+          {bridal && (
+            <div className="col-span-2 lg:col-span-2">
+              <CategoryCard
+                category={bridal}
+                onSelect={onSelectCategory}
+                lang={lang}
+                isFeatured={true}
+                badge={lang === 'ta' ? 'மணப்பெண் முகூர்த்த சிறப்பு' : '👑 Signature Bridal Troussseau'}
+                aspectRatio="aspect-[16/9] sm:aspect-[16/10]"
+              />
+            </div>
+          )}
+
+          {/* Tile 2: Gold Jewellery (Standard Portrait) */}
+          {gold && (
+            <div className="col-span-1 lg:col-span-1">
+              <CategoryCard
+                category={gold}
+                onSelect={onSelectCategory}
+                lang={lang}
+                aspectRatio="aspect-[3/4]"
+              />
+            </div>
+          )}
+
+          {/* Tile 3: Necklaces & Malas (Standard Portrait) */}
+          {necklaces && (
+            <div className="col-span-1 lg:col-span-1">
+              <CategoryCard
+                category={necklaces}
+                onSelect={onSelectCategory}
+                lang={lang}
+                aspectRatio="aspect-[3/4]"
+              />
+            </div>
+          )}
+
+          {/* Tile 4: Earrings & Jhumkas (Standard Portrait) */}
+          {earrings && (
+            <div className="col-span-1 lg:col-span-1">
+              <CategoryCard
+                category={earrings}
+                onSelect={onSelectCategory}
+                lang={lang}
+                aspectRatio="aspect-[3/4]"
+              />
+            </div>
+          )}
+
+          {/* Tile 5: Minimal & Modern (Standard Portrait) */}
+          {minimal && (
+            <div className="col-span-1 lg:col-span-1">
+              <CategoryCard
+                category={minimal}
+                onSelect={onSelectCategory}
+                lang={lang}
+                aspectRatio="aspect-[3/4]"
+              />
+            </div>
+          )}
+
+          {/* Tile 6: Vel & Sacred Dollars (Wide Featured Card - Palani Special) */}
+          {pendants && (
+            <div className="col-span-2 lg:col-span-2">
+              <CategoryCard
+                category={pendants}
+                onSelect={onSelectCategory}
+                lang={lang}
+                isFeatured={true}
+                badge={lang === 'ta' ? 'பழனி முருகன் வேல் & கவசம்' : '🔱 Sacred Palani Murugan Heritage'}
+                aspectRatio="aspect-[16/9] sm:aspect-[16/10]"
+              />
+            </div>
+          )}
+
+          {/* Tile 7: Rings & Solitaires (Wide on desktop, 1-col on mobile) */}
+          {rings && (
+            <div className="col-span-1 lg:col-span-2">
+              <CategoryCard
+                category={rings}
+                onSelect={onSelectCategory}
+                lang={lang}
+                aspectRatio="aspect-[3/4] lg:aspect-[16/10]"
+              />
+            </div>
+          )}
+
+          {/* Tile 8: Silver & Pooja Heritage (Wide on desktop, 1-col on mobile) */}
+          {silver && (
+            <div className="col-span-1 lg:col-span-2">
+              <CategoryCard
+                category={silver}
+                onSelect={onSelectCategory}
+                lang={lang}
+                aspectRatio="aspect-[3/4] lg:aspect-[16/10]"
+              />
+            </div>
+          )}
         </div>
       </div>
     </section>
