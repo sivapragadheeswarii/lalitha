@@ -245,28 +245,6 @@ export const PRODUCTS = [
     isBridal: true
   },
   {
-    id: "prod-2",
-    name: "Thanjavur Royal Peacock Haram",
-    category: "Bridal Jewellery",
-    categoryId: "bridal",
-    subCategory: "Heritage Long Haram",
-    demoPrice: "₹ 3,40,000",
-    isDemoPrice: true,
-    tag: "Royal Signature",
-    rating: 5.0,
-    reviewCount: 42,
-    description: "An ornate 19th-century inspired Thanjavur royal peacock haram sculpted with cabochon rubies, emerald accents, cascading South Sea pearls, and repoussé pendant filigree.",
-    details: {
-      finish: "Royal Heritage Antique Gold",
-      motif: "Mayil (Peacock) & Ruby Kemp Clusters",
-      occasion: "Muhurtham Ceremony & Grand Reception",
-      care: "Wipe with soft lint-free chamois cloth after wearing"
-    },
-    image: "/images/thanjavur-haram.jpg",
-    featured: true,
-    isBridal: true
-  },
-  {
     id: "prod-3",
     name: "Ruby Temple Choker Suite",
     category: "Gold Jewellery",
@@ -425,7 +403,7 @@ export const PRODUCTS = [
     isBridal: false
   },
 
-  // 4. Gold Anklets (Kolusu) & Bangles (Valayal)
+  // 4. Gold Anklets (Kolusu)
   {
     id: "prod-10",
     name: "Traditional 22K Gold Bridal Anklet (Kolusu)",
@@ -448,52 +426,8 @@ export const PRODUCTS = [
     featured: true,
     isBridal: true
   },
-  {
-    id: "prod-11",
-    name: "Classic Twisted Gold Valayal Pair",
-    category: "Bangles & Kadas",
-    categoryId: "bangles",
-    subCategory: "Valayal Pair",
-    demoPrice: "₹ 1,25,000",
-    isDemoPrice: true,
-    tag: "Timeless Pair",
-    rating: 4.8,
-    reviewCount: 31,
-    description: "A pair of sculpted 22K solid gold twisted rope bangles, featuring seamless hollow-core craftsmanship with high-polish mirror gleam.",
-    details: {
-      finish: "Mirror Polish 22K Gold",
-      motif: "Twisted Torc & Rope",
-      occasion: "Everyday Luxury, Seemantham, Festive Poojas",
-      care: "Keep away from harsh chemicals and chlorine"
-    },
-    image: "/images/gold-valayal.jpg",
-    featured: true,
-    isBridal: false
-  },
-  {
-    id: "prod-12",
-    name: "Handcrafted Filigree 22K Gold Bangles",
-    category: "Bangles & Kadas",
-    categoryId: "bangles",
-    subCategory: "Filigree Bangles",
-    demoPrice: "₹ 1,55,000",
-    isDemoPrice: true,
-    tag: "Artisan Valayal",
-    rating: 4.9,
-    reviewCount: 27,
-    description: "Intricately hand-woven 22K gold filigree valayal pair with micro-granulated edge borders and radiant warm South Indian yellow gold luster.",
-    details: {
-      finish: "Hand-chased 22K Gold Filigree",
-      motif: "Lattice Vines & Granules",
-      occasion: "Festive Poojas, Family Weddings, Heirloom Gifting",
-      care: "Clean with soft flannel cloth; do not crush"
-    },
-    image: "/images/gold-kada-bangles.jpg",
-    featured: true,
-    isBridal: false
-  },
 
-  // 5. Sacred Murugan Vel Dollar & Bridal Sets
+  // 5. Sacred Murugan Vel Dollar
   {
     id: "prod-13",
     name: "Sacred Palani Murugan Vel Dollar & Chain",
@@ -515,28 +449,6 @@ export const PRODUCTS = [
     image: "/images/vel-pendant.jpg",
     featured: true,
     isBridal: false
-  },
-  {
-    id: "prod-15",
-    name: "Artisan Bridal Treasury Chest Set",
-    category: "Bridal Jewellery",
-    categoryId: "bridal",
-    subCategory: "Complete Wedding Set",
-    demoPrice: "₹ 4,80,000",
-    isDemoPrice: true,
-    tag: "Masterpiece",
-    rating: 5.0,
-    reviewCount: 51,
-    description: "A complete Tamil wedding bridal collection featuring a matching carved broad kada, multilayered kasu chains, and auspicious valayal crafted for lifelong reverence.",
-    details: {
-      finish: "Hand-chased 22K Traditional Yellow Gold",
-      motif: "Floral Tendrils & Auspicious Kadas",
-      occasion: "Muhurtham & Family Heirloom Gifting",
-      care: "Specialist goldsmith inspection recommended biannually"
-    },
-    image: "/images/bridal-chest.jpg",
-    featured: true,
-    isBridal: true
   },
 
   // 6. Gold Rings & Solitaires
@@ -561,28 +473,6 @@ export const PRODUCTS = [
     image: "/images/diamond-ring.jpg",
     featured: true,
     isBridal: true
-  },
-  {
-    id: "prod-17",
-    name: "Celestial Navaratna Gemstone Signet Rings",
-    category: "Rings & Solitaires",
-    categoryId: "rings",
-    subCategory: "Statement Rings",
-    demoPrice: "₹ 54,000",
-    isDemoPrice: true,
-    tag: "Auspicious Gem",
-    rating: 4.7,
-    reviewCount: 22,
-    description: "Solid signet rings crowned with natural cabochon gemstones in rubies, carnelian, and jade bezel settings, imbued with planetary harmony and protection.",
-    details: {
-      finish: "Satin Brushed 22K Gold",
-      motif: "Bezel Cabochon Mandala",
-      occasion: "Festivals, Astrological Auspicious Milestones",
-      care: "Store independently in soft velvet pouch"
-    },
-    image: "/images/gemstone-rings.jpg",
-    featured: true,
-    isBridal: false
   },
 
   // 7. Silver Jewellery (Anklets, Studs, Rings, Pooja Articles)

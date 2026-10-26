@@ -36,13 +36,13 @@ export const CATEGORIES = [
     description: "Sacred Palani Murugan Vel pendants, Om amulets, and divine deity kavachams in pure 22K gold."
   },
   {
-    id: "bangles",
-    name: "Bangles & Kadas",
-    nameTa: "வளையல் & காப்புகள்",
-    tagline: "Kadas, Valayal & Broad Bangles",
-    count: "35+ Designs",
-    image: "/images/gold-kada-bangles.jpg",
-    description: "Handcrafted filigree bangles, temple nakshi kadas, twisted gold valayal, and men's singam-mugam kadas."
+    id: "minimal",
+    name: "Minimal & Modern",
+    nameTa: "நவீன & மினிமல் நகைகள்",
+    tagline: "Contemporary Chic & Daily Wear",
+    count: "20+ Designs",
+    image: "/images/modern-crescent-necklace.jpg",
+    description: "Lightweight, sleek 18K/22K gold necklaces, delicate diamond studs, and modern everyday accents for the contemporary woman."
   },
   {
     id: "earrings",

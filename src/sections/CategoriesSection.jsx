@@ -17,7 +17,7 @@ export default function CategoriesSection({ onSelectCategory, lang = 'en' }) {
           <div className="w-12 sm:w-16 h-[1.5px] bg-gold mx-auto mt-1 sm:mt-2" />
           <p className="text-xs sm:text-sm text-charcoal-muted leading-relaxed font-light pt-1 sm:pt-2 px-2">
             {lang === 'ta'
-              ? 'பழனி முருகனின் புனித வேல் டாலர்கள், பாரம்பரிய காசு மாலை, அட்டிகை, வளையல் மற்றும் திருமண மணப்பெண் நகைத் தொகுப்புகள்.'
+              ? 'பழனி முருகனின் புனித வேல் டாலர்கள், பாரம்பரிய காசு மாலை, அட்டிகை, ஜிமிக்கி மற்றும் திருமண மணப்பெண் நகைத் தொகுப்புகள்.'
               : 'Explore heritage creations fashioned in 22K gold, reflecting the devotional grace and splendour of South Indian celebrations.'}
           </p>
         </div>

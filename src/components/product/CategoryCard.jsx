@@ -18,17 +18,17 @@ export default function CategoryCard({ category, onSelect, lang = 'en' }) {
       aria-label={`Browse ${category.name} collection`}
     >
       {/* Category Image with Zoom on Hover */}
-      <div className="relative aspect-[3/4] overflow-hidden">
+      <div className="relative aspect-[3/4] overflow-hidden img-shine">
         <ImageWithFallback
           src={category.image}
           alt={category.name}
           aspectRatio="aspect-[3/4]"
           fallbackTitle={category.name}
-          className="group-hover:scale-106 transition-transform duration-500 ease-out"
+          className="group-hover:scale-108 transition-transform duration-700 ease-out"
         />
 
         {/* Sophisticated Dark Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/95 via-charcoal/40 to-transparent transition-opacity duration-300" />
+        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/95 via-charcoal/40 to-transparent transition-opacity duration-300 pointer-events-none" />
       </div>
 
       {/* Content Overlay */}

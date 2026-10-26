@@ -23,17 +23,19 @@ export default function AnnouncementBar({ onOpenCalculator }) {
             <span>Today's Rate (Demo)</span>
           </div>
 
-          {/* Marquee Rate Strip */}
-          <div className="flex-1 overflow-x-auto no-scrollbar flex items-center gap-5 sm:gap-8 text-[11px] whitespace-nowrap py-0.5">
-            {rates.map((item, idx) => (
-              <div key={idx} className="inline-flex items-center gap-1.5 shrink-0">
-                <span className="text-ivory/70 text-[10px] tracking-wide font-medium">{item.label}:</span>
-                <span className={`font-semibold tracking-wider ${item.highlight ? 'text-gold-light font-bold' : 'text-ivory'}`}>
-                  {item.rate}
-                </span>
-                <span className="text-gold/30 text-xs ml-3">•</span>
-              </div>
-            ))}
+          {/* Continuous Running Marquee Rate Strip */}
+          <div className="flex-1 overflow-hidden relative">
+            <div className="animate-ticker flex items-center py-0.5">
+              {[...rates, ...rates].map((item, idx) => (
+                <div key={idx} className="inline-flex items-center gap-1.5 shrink-0 px-3 sm:px-4">
+                  <span className="text-ivory/70 text-[10px] tracking-wide font-medium">{item.label}:</span>
+                  <span className={`font-semibold tracking-wider ${item.highlight ? 'text-gold-light font-bold' : 'text-ivory'}`}>
+                    {item.rate}
+                  </span>
+                  <span className="text-gold/40 text-xs ml-3">•</span>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Quick Calculator Trigger */}

@@ -17,14 +17,14 @@ export default function ProductCard({
       {/* Product Image Container */}
       <div
         onClick={() => onQuickView(product)}
-        className="relative overflow-hidden bg-ivory-100 cursor-pointer"
+        className="relative overflow-hidden bg-ivory-100 cursor-pointer img-shine"
       >
         <ImageWithFallback
           src={product.image}
           alt={product.name}
           aspectRatio="aspect-[4/5]"
           fallbackTitle={product.name}
-          className="group-hover:scale-105 transition-transform duration-500 ease-out"
+          className="group-hover:scale-108 transition-transform duration-700 ease-out"
         />
 
         {/* Tag Pill */}
