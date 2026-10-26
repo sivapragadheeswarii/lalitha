@@ -34,17 +34,17 @@ export default function CategoriesSection({ onSelectCategory, lang = 'en' }) {
           </p>
         </div>
 
-        {/* 1. Quick Story Avatars / Category Bubbles Strip (Mobile & Tablet) */}
-        <div className="flex items-center gap-3 sm:gap-4 overflow-x-auto no-scrollbar pb-3 mb-6 sm:mb-8 px-1">
+        {/* 1. Quick Story Avatars / Category Medallions (Responsive: Compact & Swipable on Mobile, Grand & Centered on Desktop) */}
+        <div className="flex items-center justify-start md:justify-center gap-3 xs:gap-4 sm:gap-6 md:gap-7 lg:gap-8 overflow-x-auto no-scrollbar pb-3 mb-8 sm:mb-12 px-2 max-w-7xl mx-auto">
           {CATEGORIES.map((cat) => (
             <button
               key={cat.id}
               onClick={() => onSelectCategory(cat.id)}
-              className="flex flex-col items-center gap-1.5 shrink-0 group focus:outline-hidden"
+              className="flex flex-col items-center gap-1.5 md:gap-2.5 shrink-0 group focus:outline-hidden"
               aria-label={`Jump to ${cat.name}`}
             >
-              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full p-0.5 bg-gradient-to-tr from-gold to-maroon group-hover:scale-105 transition-transform duration-300 shadow-sm">
-                <div className="w-full h-full rounded-full overflow-hidden bg-charcoal border-2 border-ivory">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full p-0.5 md:p-1 bg-gradient-to-tr from-gold via-gold-300 to-maroon group-hover:scale-108 transition-all duration-300 shadow-sm md:shadow-md group-hover:shadow-xl">
+                <div className="w-full h-full rounded-full overflow-hidden bg-charcoal border-2 md:border-3 border-ivory">
                   <img
                     src={cat.image}
                     alt={cat.name}
@@ -53,9 +53,19 @@ export default function CategoriesSection({ onSelectCategory, lang = 'en' }) {
                   />
                 </div>
               </div>
-              <span className="text-[10px] sm:text-[11px] font-medium text-charcoal group-hover:text-maroon whitespace-nowrap tracking-tight transition-colors">
-                {lang === 'ta' && cat.nameTa ? cat.nameTa : cat.name.split(' ')[0]}
-              </span>
+              <div className="text-center">
+                <span className="text-[10px] xs:text-[11px] md:text-xs lg:text-sm font-medium md:font-semibold text-charcoal group-hover:text-maroon whitespace-nowrap tracking-tight transition-colors block">
+                  {lang === 'ta' && cat.nameTa ? cat.nameTa : (
+                    <>
+                      <span className="md:hidden">{cat.name.split(' ')[0]}</span>
+                      <span className="hidden md:inline">{cat.name}</span>
+                    </>
+                  )}
+                </span>
+                <span className="hidden md:block text-[9px] lg:text-[10px] text-gold-dark font-medium tracking-wider uppercase mt-0.5">
+                  {cat.count}
+                </span>
+              </div>
             </button>
           ))}
         </div>
