@@ -69,8 +69,8 @@ export const PRODUCTS = [
   {
     id: "prod-user-4",
     name: "Contemporary Crescent Pearl Collar & Studs Suite",
-    category: "Gold Jewellery",
-    categoryId: "gold",
+    category: "Minimal & Modern",
+    categoryId: "minimal",
     subCategory: "Modern Minimal Suite",
     demoPrice: "₹ 1,45,000",
     isDemoPrice: true,
@@ -269,8 +269,8 @@ export const PRODUCTS = [
   {
     id: "prod-4",
     name: "Modern Minimalist Solitaire Gold Pendant & Chain",
-    category: "Gold Jewellery",
-    categoryId: "gold",
+    category: "Minimal & Modern",
+    categoryId: "minimal",
     subCategory: "Minimal Everyday Wear",
     demoPrice: "₹ 38,000",
     isDemoPrice: true,
@@ -337,8 +337,8 @@ export const PRODUCTS = [
   {
     id: "prod-7",
     name: "Modern Minimalist Solitaire Diamond Ear Studs",
-    category: "Earrings & Jhumkas",
-    categoryId: "earrings",
+    category: "Minimal & Modern",
+    categoryId: "minimal",
     subCategory: "Solitaire Diamond Studs",
     demoPrice: "₹ 52,000",
     isDemoPrice: true,
