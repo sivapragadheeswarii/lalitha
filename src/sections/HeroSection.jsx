@@ -113,10 +113,10 @@ export default function HeroSection({ onExploreCollections, onExploreBridal, lan
               {/* Main Image Container */}
               <div className="relative overflow-hidden bg-charcoal border-2 border-gold shadow-2xl group rounded-sm">
                 <ImageWithFallback
-                  src="/images/twin-peacock-royal-collar.png"
-                  alt="Lalita Jewellers Heritage 22K Royal Twin Peacock Sculpted Gold Collar"
+                  src="/images/golden-tissue-nakshi-bride.png"
+                  alt="Lalita Jewellers Heritage 22K Golden Tissue Muhurtham Lakshmi Nakshi Suite"
                   aspectRatio="aspect-[4/5]"
-                  fallbackTitle="Royal Twin Peacock Collar"
+                  fallbackTitle="Golden Muhurtham Lakshmi Suite"
                   priority={true}
                 />
 
@@ -136,10 +136,10 @@ export default function HeroSection({ onExploreCollections, onExploreBridal, lan
                       Temple Signature Masterpiece
                     </span>
                     <span className="font-serif text-sm sm:text-lg text-charcoal font-semibold">
-                      Royal Twin Peacock (Mayil) Collar
+                      Golden Muhurtham Lakshmi Nakshi Suite
                     </span>
                     <p className="text-[9px] sm:text-[10px] text-charcoal-muted">
-                      Handcrafted with 22K gold repoussé & radiant emerald plumage
+                      Handcrafted with 22K temple gold, divine deities & tiered jhumkas
                     </p>
                   </div>
                   <button

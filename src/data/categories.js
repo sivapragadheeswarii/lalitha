@@ -5,7 +5,7 @@ export const CATEGORIES = [
     nameTa: "தங்க நகைகள்",
     tagline: "Timeless 22K Heritage Artistry",
     count: "45+ Designs",
-    image: "/images/twin-peacock-royal-collar.png",
+    image: "/images/gaja-elephant-lakshmi-necklace.jpg",
     description: "Classic South Indian 916 hallmarked gold ornaments crafted for festivals, milestones, and daily grace."
   },
   {
