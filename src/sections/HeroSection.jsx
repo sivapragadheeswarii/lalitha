@@ -64,8 +64,8 @@ export default function HeroSection({ onExploreCollections, onExploreBridal, lan
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] sm:w-[1200px] h-[1000px] sm:h-[1200px] border border-gold/10 rounded-full pointer-events-none" />
       <div className="absolute -top-32 -left-32 w-80 h-80 bg-gold-200/20 rounded-full blur-3xl pointer-events-none" />
 
-      {/* Gold Showcase Running Marquee Ticker Banner */}
-      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 mb-4 sm:mb-8">
+      {/* Gold Showcase Running Marquee Ticker Banner (Hidden on mobile, visible on desktop/tablet) */}
+      <div className="hidden sm:block max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 mb-4 sm:mb-8">
         <div className="bg-gradient-to-r from-[#171312] via-maroon to-[#171312] text-ivory py-1 sm:py-2 px-2.5 sm:px-4 border border-gold/40 shadow-sm flex items-center justify-between text-[10px] sm:text-[11px] overflow-hidden rounded-xs">
           {/* Left badge */}
           <div className="flex items-center gap-1.5 font-medium tracking-wider text-gold-light shrink-0 z-10 bg-gradient-to-r from-[#171312] via-[#171312] to-transparent pr-2">
