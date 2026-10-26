@@ -64,10 +64,10 @@ export default function FeaturedSection({
               : 'Each ornament represents hours of meticulous goldsmithing, blending ancient motifs with enduring poise.'}
           </p>
 
-          {/* Illustrative Demo Price Notice */}
+          {/* Hallmark Trust Notice */}
           <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-ivory-200/80 border border-gold-200 text-[10px] sm:text-[11px] text-charcoal-muted mt-2">
             <Info className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-gold-dark shrink-0" />
-            <span>Prices displayed are illustrative demo guides. Final estimates are provided upon in-store consultation.</span>
+            <span>All jewellery is 100% 22K 916 BIS Hallmarked. Exact estimates provided upon showroom consultation.</span>
           </div>
         </div>
 

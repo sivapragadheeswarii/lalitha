@@ -107,9 +107,6 @@ export default function ProductCard({
               <span className="font-serif text-xs sm:text-base font-semibold text-charcoal">
                 {product.demoPrice}
               </span>
-              <span className="text-[8px] sm:text-[9px] text-charcoal-muted uppercase">
-                (Demo)
-              </span>
             </div>
             <span className="text-[8px] sm:text-[9px] text-charcoal-muted block sm:block hidden">
               Palani Showroom

@@ -52,14 +52,14 @@ export default function ProductModal({
             <div className="w-12 h-[1px] bg-gold mt-3" />
           </div>
 
-          {/* Illustrative Demo Price Notice */}
+          {/* Showroom Price Benchmark Notice */}
           <div className="bg-ivory-200/60 p-3.5 border-l-2 border-gold text-xs text-charcoal-muted space-y-1">
             <div className="flex items-baseline gap-2">
               <span className="text-sm font-semibold text-charcoal font-serif">
                 {product.demoPrice}
               </span>
               <span className="text-[10px] uppercase tracking-wider text-charcoal-muted">
-                (Illustrative Demo Price)
+                (Showroom Benchmark)
               </span>
             </div>
             <p className="text-[11px] leading-relaxed text-charcoal-muted/90">

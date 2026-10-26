@@ -106,7 +106,7 @@ export default function NewsletterSection() {
             )}
 
             <p className="text-[10px] text-charcoal-muted/70 tracking-wide">
-              Illustrative demo form • We honor your privacy
+              We respect your privacy • Only auspicious festival & bridal updates
             </p>
           </form>
         )}

@@ -63,7 +63,7 @@ export default function CartDrawer({
           <div className="bg-ivory-200/70 border-b border-charcoal-border/40 px-6 py-2.5 flex items-start gap-2 text-[11px] text-charcoal-muted">
             <Info className="w-4 h-4 text-gold-dark shrink-0 mt-0.5" />
             <span>
-              Illustrative Demo Bag: Purchases are finalized in-person at our Palani showroom or via verified artisan consultation.
+              Showroom Enquiry Bag: Selected designs are finalized with certified BIS 916 weights at our Palani showroom.
             </span>
           </div>
 
@@ -113,7 +113,7 @@ export default function CartDrawer({
                           {product.name}
                         </h5>
                         <span className="text-xs text-charcoal-muted block">
-                          {product.demoPrice} (Demo)
+                          {product.demoPrice}
                         </span>
                       </div>
 
