@@ -517,28 +517,6 @@ export const PRODUCTS = [
     isBridal: false
   },
   {
-    id: "prod-14",
-    name: "South Indian Bridal Splendour Suite",
-    category: "Bridal Jewellery",
-    categoryId: "bridal",
-    subCategory: "Full Muhurtham Parure",
-    demoPrice: "₹ 5,60,000",
-    isDemoPrice: true,
-    tag: "Palani Signature",
-    rating: 5.0,
-    reviewCount: 64,
-    description: "The quintessential Tamil wedding bridal ensemble: layered kasu mala, Thanjavur peacock choker, royal maang tikka, bridal nath, and chandelier jhumkas.",
-    details: {
-      finish: "Authentic 22K 916 Temple Antique Gold",
-      motif: "Peacock, Lotus & Divine Icons",
-      occasion: "Auspicious Wedding Muhurtham",
-      care: "Store in dry moisture-controlled heirloom chest"
-    },
-    image: "/images/bridal-feature.jpg",
-    featured: true,
-    isBridal: true
-  },
-  {
     id: "prod-15",
     name: "Artisan Bridal Treasury Chest Set",
     category: "Bridal Jewellery",

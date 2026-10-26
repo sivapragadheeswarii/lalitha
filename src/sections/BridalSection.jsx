@@ -6,11 +6,11 @@ export default function BridalSection({ onExploreBridal, onEnquireBridal, lang =
   const bridalLooks = [
     {
       id: 'look-1',
-      title: 'Palani Muhurtham Kasu & Haram Suite',
-      subtitle: '22K 916 Temple Antique Gold • Full Bridal Suite',
+      title: 'Heritage Lakshmi Nakshi Choker & Jhumkas',
+      subtitle: '22K 916 Temple Antique Gold • Grand Muhurtham Suite',
       badge: 'Signature Look 01',
-      image: '/images/bridal-feature.jpg',
-      alt: 'Traditional South Indian Bride in Lalita Jewellers Bridal Gold Jewellery'
+      image: '/images/lakshmi-nakshi-choker.png',
+      alt: 'Heritage Lakshmi Nakshi Choker & Grand Jhumkas Suite'
     },
     {
       id: 'look-2',
