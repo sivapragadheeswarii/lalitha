@@ -28,7 +28,7 @@ export default function Modal({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto"
+      className="fixed inset-0 z-50 flex items-center justify-center p-2 xs:p-4 sm:p-6 overflow-y-auto"
       role="dialog"
       aria-modal="true"
       aria-labelledby="modal-title"
@@ -50,15 +50,15 @@ export default function Modal({
 
         {/* Header if title provided */}
         {(title || subtitle) && (
-          <div className="flex items-start justify-between px-6 py-5 border-b border-charcoal-border/50">
+          <div className="flex items-start justify-between px-3.5 xs:px-5 sm:px-6 py-3.5 sm:py-5 border-b border-charcoal-border/50">
             <div>
               {title && (
-                <h3 id="modal-title" className="font-serif text-2xl text-charcoal font-medium">
+                <h3 id="modal-title" className="font-serif text-lg xs:text-xl sm:text-2xl text-charcoal font-medium">
                   {title}
                 </h3>
               )}
               {subtitle && (
-                <p className="text-xs text-charcoal-muted tracking-wider uppercase mt-1">
+                <p className="text-[10px] xs:text-xs text-charcoal-muted tracking-wider uppercase mt-1">
                   {subtitle}
                 </p>
               )}
@@ -78,14 +78,14 @@ export default function Modal({
           <button
             onClick={onClose}
             aria-label="Close dialog"
-            className="absolute top-4 right-4 z-20 p-2 text-charcoal bg-ivory/80 backdrop-blur-md rounded-full hover:bg-ivory hover:text-maroon border border-charcoal-border shadow-sm transition-all"
+            className="absolute top-2.5 right-2.5 xs:top-4 xs:right-4 z-20 p-1.5 xs:p-2 text-charcoal bg-ivory/90 backdrop-blur-md rounded-full hover:bg-ivory hover:text-maroon border border-charcoal-border shadow-sm transition-all"
           >
-            <X className="w-5 h-5" />
+            <X className="w-4 h-4 xs:w-5 xs:h-5" />
           </button>
         )}
 
         {/* Content */}
-        <div className="p-6 max-h-[80vh] overflow-y-auto">
+        <div className="p-3 xs:p-4.5 sm:p-6 max-h-[82vh] overflow-y-auto">
           {children}
         </div>
       </div>

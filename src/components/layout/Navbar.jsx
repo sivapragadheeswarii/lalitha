@@ -79,9 +79,9 @@ export default function Navbar({
               <button
                 onClick={onToggleLang}
                 title={lang === 'en' ? 'தமிழில் மாற்றுக' : 'Switch to English'}
-                className="px-2 py-1 text-[10px] sm:text-[11px] font-semibold border border-gold/40 bg-gold-50/70 hover:bg-gold-100 text-charcoal flex items-center gap-1 transition-all rounded shadow-xs"
+                className="px-1.5 xs:px-2 py-0.5 xs:py-1 text-[9px] xs:text-[10px] sm:text-[11px] font-semibold border border-gold/40 bg-gold-50/70 hover:bg-gold-100 text-charcoal flex items-center gap-0.5 xs:gap-1 transition-all rounded shadow-xs"
               >
-                <Globe className="w-3 h-3 text-gold-dark" />
+                <Globe className="w-2.5 h-2.5 xs:w-3 xs:h-3 text-gold-dark" />
                 <span>{lang === 'en' ? 'தமிழ்' : 'EN'}</span>
               </button>
             )}

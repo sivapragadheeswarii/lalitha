@@ -72,13 +72,13 @@ export default function FeaturedSection({
         </div>
 
         {/* Filter Navigation Tabs - Swipable Horizontal Pills on Mobile */}
-        <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto no-scrollbar pb-2 sm:pb-0 sm:flex-wrap sm:justify-center mb-6 sm:mb-8 px-1">
+        <div className="flex items-center gap-1 xs:gap-1.5 sm:gap-2 overflow-x-auto no-scrollbar pb-2 sm:pb-0 sm:flex-wrap sm:justify-center mb-4 sm:mb-8 px-0.5">
           <button
             onClick={() => {
               setActiveTab('all');
               onSelectCategory('all');
             }}
-            className={`px-3 sm:px-4 py-1.5 sm:py-2 text-[11px] sm:text-xs uppercase tracking-wider transition-all font-medium rounded-sm shrink-0 whitespace-nowrap ${
+            className={`px-2.5 xs:px-3 sm:px-4 py-1.5 sm:py-2 text-[10px] xs:text-[11px] sm:text-xs uppercase tracking-wider transition-all font-medium rounded-sm shrink-0 whitespace-nowrap ${
               activeTab === 'all'
                 ? 'bg-maroon text-ivory shadow-xs'
                 : 'bg-ivory-100 hover:bg-gold-50 text-charcoal border border-charcoal-border/40'
@@ -94,7 +94,7 @@ export default function FeaturedSection({
                 setActiveTab(cat.id);
                 onSelectCategory(cat.id);
               }}
-              className={`px-3 sm:px-4 py-1.5 sm:py-2 text-[11px] sm:text-xs uppercase tracking-wider transition-all font-medium rounded-sm shrink-0 whitespace-nowrap ${
+              className={`px-2.5 xs:px-3 sm:px-4 py-1.5 sm:py-2 text-[10px] xs:text-[11px] sm:text-xs uppercase tracking-wider transition-all font-medium rounded-sm shrink-0 whitespace-nowrap ${
                 activeTab === cat.id
                   ? 'bg-maroon text-ivory shadow-xs'
                   : 'bg-ivory-100 hover:bg-gold-50 text-charcoal border border-charcoal-border/40'
@@ -106,10 +106,10 @@ export default function FeaturedSection({
         </div>
 
         {/* Controls Bar: Count & Sort Dropdown */}
-        <div className="flex flex-row items-center justify-between pb-4 sm:pb-6 mb-4 sm:mb-6 border-b border-charcoal-border/30 gap-2 text-xs text-charcoal-muted">
+        <div className="flex flex-row items-center justify-between pb-3 sm:pb-6 mb-3 sm:mb-6 border-b border-charcoal-border/30 gap-2 text-xs text-charcoal-muted">
           <div className="flex items-center gap-1.5 truncate">
-            <span className="font-semibold text-charcoal font-serif text-xs sm:text-sm">
-              {filteredAndSortedProducts.length} Designs
+            <span className="font-semibold text-charcoal font-serif text-[11px] xs:text-xs sm:text-sm">
+              {filteredAndSortedProducts.length} {lang === 'ta' ? 'நகைகள்' : 'Designs'}
             </span>
           </div>
 
@@ -118,7 +118,7 @@ export default function FeaturedSection({
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="bg-ivory border border-charcoal-border/60 py-1 px-2 text-[11px] sm:text-xs text-charcoal focus:outline-none focus:border-gold rounded-xs"
+              className="bg-ivory border border-charcoal-border/60 py-1 px-1.5 xs:px-2 text-[10px] xs:text-[11px] sm:text-xs text-charcoal focus:outline-none focus:border-gold rounded-xs"
             >
               <option value="featured">Featured First</option>
               <option value="price-asc">Price: Low to High</option>
@@ -129,7 +129,7 @@ export default function FeaturedSection({
         </div>
 
         {/* Products Grid (2 columns on mobile, 4 columns on desktop) */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 xs:gap-2.5 sm:gap-6">
           {filteredAndSortedProducts.map((product) => (
             <ProductCard
               key={product.id}

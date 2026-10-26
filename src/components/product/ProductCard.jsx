@@ -69,21 +69,21 @@ export default function ProductCard({
       </div>
 
       {/* Card Body */}
-      <div className="p-2.5 sm:p-5 flex flex-col flex-1 justify-between bg-white">
+      <div className="p-2 xs:p-2.5 sm:p-5 flex flex-col flex-1 justify-between bg-white">
         <div>
           {/* Category & Rating */}
-          <div className="flex items-center justify-between text-[9px] sm:text-[10px] uppercase tracking-wider text-gold-dark font-medium mb-1">
-            <span className="truncate max-w-[90px] sm:max-w-none">{product.category}</span>
+          <div className="flex items-center justify-between text-[8px] xs:text-[9px] sm:text-[10px] uppercase tracking-wider text-gold-dark font-medium mb-1">
+            <span className="truncate max-w-[75px] xs:max-w-[90px] sm:max-w-none">{product.category}</span>
             <div className="flex items-center gap-0.5 text-gold-dark shrink-0">
               <Star className="w-2.5 h-2.5 sm:w-3 sm:h-3 fill-gold text-gold" />
-              <span className="font-semibold text-charcoal text-[10px] sm:text-[11px]">{product.rating || 5.0}</span>
+              <span className="font-semibold text-charcoal text-[9px] xs:text-[10px] sm:text-[11px]">{product.rating || 5.0}</span>
             </div>
           </div>
 
           {/* Product Name */}
           <h3
             onClick={() => onQuickView(product)}
-            className="font-serif text-xs sm:text-base text-charcoal group-hover:text-maroon font-medium cursor-pointer transition-colors line-clamp-1 leading-snug"
+            className="font-serif text-[11px] xs:text-xs sm:text-base text-charcoal group-hover:text-maroon font-medium cursor-pointer transition-colors line-clamp-1 leading-snug"
           >
             {product.name}
           </h3>
@@ -94,29 +94,26 @@ export default function ProductCard({
           </p>
 
           {/* Hallmark Badge */}
-          <div className="mt-1.5 sm:mt-2.5 inline-flex items-center gap-1 text-[8px] sm:text-[10px] text-charcoal-muted/90 bg-ivory-100 px-1.5 sm:px-2 py-0.5 border border-charcoal-border/40">
-            <Award className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-gold-dark" />
+          <div className="mt-1 xs:mt-1.5 sm:mt-2.5 inline-flex items-center gap-0.5 xs:gap-1 text-[7px] xs:text-[8px] sm:text-[10px] text-charcoal-muted/90 bg-ivory-100 px-1 xs:px-1.5 sm:px-2 py-0.5 border border-charcoal-border/40">
+            <Award className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-gold-dark shrink-0" />
             <span className="truncate">22K 916 Hallmark</span>
           </div>
         </div>
 
         {/* Demo Price & Enquiry CTA */}
-        <div className="pt-2 sm:pt-4 mt-2 sm:mt-3 border-t border-charcoal-border/30 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-2">
-          <div>
+        <div className="pt-1.5 xs:pt-2 sm:pt-4 mt-1.5 xs:mt-2 sm:mt-3 border-t border-charcoal-border/30 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 xs:gap-1.5 sm:gap-2">
+          <div className="min-w-0">
             <div className="flex items-baseline gap-1">
-              <span className="font-serif text-xs sm:text-base font-semibold text-charcoal">
+              <span className="font-serif text-[11px] xs:text-xs sm:text-base font-semibold text-charcoal truncate">
                 {product.demoPrice}
               </span>
             </div>
-            <span className="text-[8px] sm:text-[9px] text-charcoal-muted block sm:block hidden">
-              Palani Showroom
-            </span>
           </div>
 
           <button
             onClick={() => onEnquire(product)}
             aria-label={`Enquire about ${product.name}`}
-            className="w-full sm:w-auto px-2 sm:px-3 py-1 sm:py-1.5 border border-maroon text-maroon hover:bg-maroon hover:text-ivory text-[9px] sm:text-[10px] uppercase tracking-wider font-semibold transition-all inline-flex items-center justify-center gap-1 shadow-2xs active:scale-95"
+            className="w-full sm:w-auto px-1.5 xs:px-2 sm:px-3 py-1 sm:py-1.5 border border-maroon text-maroon hover:bg-maroon hover:text-ivory text-[8px] xs:text-[9px] sm:text-[10px] uppercase tracking-wider font-semibold transition-all inline-flex items-center justify-center gap-1 shadow-2xs active:scale-95 shrink-0"
           >
             <MessageCircle className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-gold-dark" />
             <span>Enquire</span>

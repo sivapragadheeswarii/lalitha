@@ -99,33 +99,33 @@ export default function ReviewsSection() {
 
   return (
     <section id="reviews" className="py-20 lg:py-28 bg-gradient-to-b from-ivory via-ivory-100 to-ivory border-b border-charcoal-border/30 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 bg-gold-50 border border-gold-200 text-gold-dark text-[10px] uppercase tracking-[0.25em] font-semibold">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14 space-y-2 sm:space-y-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-gold-50 border border-gold-200 text-gold-dark text-[9px] xs:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.25em] font-semibold">
             <Sparkles className="w-3.5 h-3.5 text-gold-dark" />
             <span>Trusted Family Heritage</span>
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-charcoal font-medium">
+          <h2 className="font-serif text-2xl sm:text-4xl md:text-5xl text-charcoal font-medium">
             Treasured by Families Across Tamil Nadu
           </h2>
-          <div className="w-20 h-[2px] bg-gold-gradient mx-auto mt-2" />
+          <div className="w-16 sm:w-20 h-[2px] bg-gold-gradient mx-auto mt-2" />
           
-          <p className="text-xs sm:text-sm text-charcoal-muted leading-relaxed font-light pt-2">
+          <p className="text-xs sm:text-sm text-charcoal-muted leading-relaxed font-light pt-2 px-2">
             Read authentic experiences from brides and families in Palani, Dindigul, Madurai, and Coimbatore who celebrated life&apos;s grandest milestones with Lalita Jewellers.
           </p>
 
           {/* Aggregate Rating Banner */}
-          <div className="inline-flex flex-col sm:flex-row items-center gap-1.5 sm:gap-4 bg-white px-4 sm:px-5 py-2 sm:py-2.5 border border-gold/40 shadow-xs mt-2 sm:mt-3">
+          <div className="inline-flex flex-col sm:flex-row items-center gap-1.5 sm:gap-4 bg-white px-3 xs:px-4 sm:px-5 py-2 sm:py-2.5 border border-gold/40 shadow-xs mt-2 sm:mt-3">
             <div className="flex items-center gap-1">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-gold text-gold" />
               ))}
             </div>
-            <div className="flex items-center gap-2">
-              <span className="font-serif text-sm sm:text-lg font-bold text-charcoal">4.9 / 5.0</span>
-              <span className="text-[10px] sm:text-[11px] text-charcoal-muted border-l border-charcoal-border/40 pl-2 sm:pl-3">
+            <div className="flex items-center gap-1.5 sm:gap-2">
+              <span className="font-serif text-xs xs:text-sm sm:text-lg font-bold text-charcoal">4.9 / 5.0</span>
+              <span className="text-[9px] xs:text-[10px] sm:text-[11px] text-charcoal-muted border-l border-charcoal-border/40 pl-2 sm:pl-3">
                 Over 450+ Verified Client Reviews
               </span>
             </div>
@@ -133,7 +133,7 @@ export default function ReviewsSection() {
         </div>
 
         {/* Category Tabs - Swipable on mobile */}
-        <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto no-scrollbar pb-2 sm:pb-0 sm:flex-wrap sm:justify-center mb-6 sm:mb-10 px-1">
+        <div className="flex items-center gap-1 xs:gap-1.5 sm:gap-2 overflow-x-auto no-scrollbar pb-2 sm:pb-0 sm:flex-wrap sm:justify-center mb-6 sm:mb-10 px-0.5">
           {[
             { id: 'all', label: 'All Reviews' },
             { id: 'bridal', label: 'Bridal Harams' },
@@ -145,7 +145,7 @@ export default function ReviewsSection() {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`px-3 sm:px-4 py-1.5 sm:py-2 text-[11px] sm:text-xs uppercase tracking-wider transition-all font-medium rounded-sm shrink-0 whitespace-nowrap ${
+              className={`px-2.5 xs:px-3 sm:px-4 py-1.5 sm:py-2 text-[10px] xs:text-[11px] sm:text-xs uppercase tracking-wider transition-all font-medium rounded-sm shrink-0 whitespace-nowrap ${
                 activeTab === tab.id
                   ? 'bg-maroon text-ivory shadow-xs'
                   : 'bg-white hover:bg-gold-50 text-charcoal border border-charcoal-border/40'

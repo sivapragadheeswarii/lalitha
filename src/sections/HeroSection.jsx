@@ -109,7 +109,7 @@ export default function HeroSection({ onExploreCollections, onExploreBridal, lan
             </div>
 
             {/* Main Headline */}
-            <h1 className="font-serif text-2.5xl sm:text-5xl md:text-6xl lg:text-7xl font-normal text-charcoal tracking-tight leading-[1.15]">
+            <h1 className="font-serif text-2xl xs:text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-normal text-charcoal tracking-tight leading-[1.18] sm:leading-[1.15]">
               {lang === 'ta' ? (
                 <>
                   பாரம்பரிய பொக்கிஷம், <br />
@@ -135,26 +135,26 @@ export default function HeroSection({ onExploreCollections, onExploreBridal, lan
                 : "Handcrafted 22K 916 hallmarked bridal and temple jewellery in Palani."}
             </p>
 
-            {/* CTA Buttons - Compact side-by-side on mobile */}
-            <div className="pt-1 sm:pt-2 flex flex-row items-center justify-center lg:justify-start gap-2.5 sm:gap-4">
+            {/* CTA Buttons - Proportioned side-by-side on all mobile sizes */}
+            <div className="pt-1 sm:pt-2 flex flex-row items-center justify-center lg:justify-start gap-2 xs:gap-2.5 sm:gap-4 max-w-sm mx-auto lg:mx-0">
               <button
                 onClick={onExploreCollections}
-                className="flex-1 sm:flex-initial px-3 sm:px-8 py-2.5 sm:py-4 bg-maroon text-ivory text-[10px] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] font-semibold hover:bg-maroon-light transition-all shadow-sm hover:shadow-xl flex items-center justify-center gap-1.5 sm:gap-2.5 group active:scale-[0.98] border border-gold/30 rounded-xs"
+                className="flex-1 sm:flex-initial px-2.5 xs:px-4 sm:px-8 py-2.5 sm:py-4 bg-maroon text-ivory text-[9px] xs:text-[10px] sm:text-xs uppercase tracking-[0.12em] xs:tracking-[0.15em] sm:tracking-[0.2em] font-semibold hover:bg-maroon-light transition-all shadow-sm hover:shadow-xl flex items-center justify-center gap-1 xs:gap-1.5 sm:gap-2.5 group active:scale-[0.98] border border-gold/30 rounded-xs truncate"
               >
                 <span>{lang === 'ta' ? 'நகைத் தொகுப்புகள்' : 'Collections'}</span>
-                <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gold-light group-hover:translate-x-1.5 transition-transform" />
+                <ArrowRight className="w-3 h-3 xs:w-3.5 xs:h-3.5 sm:w-4 sm:h-4 text-gold-light group-hover:translate-x-1.5 transition-transform shrink-0" />
               </button>
 
               <button
                 onClick={onExploreBridal}
-                className="flex-1 sm:flex-initial px-3 sm:px-8 py-2.5 sm:py-4 bg-ivory text-charcoal border-2 border-gold hover:border-gold-dark hover:bg-gold-50/70 text-[10px] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] font-semibold transition-all flex items-center justify-center gap-1.5 sm:gap-2 shadow-2xs active:scale-[0.98] rounded-xs"
+                className="flex-1 sm:flex-initial px-2.5 xs:px-4 sm:px-8 py-2.5 sm:py-4 bg-ivory text-charcoal border-2 border-gold hover:border-gold-dark hover:bg-gold-50/70 text-[9px] xs:text-[10px] sm:text-xs uppercase tracking-[0.12em] xs:tracking-[0.15em] sm:tracking-[0.2em] font-semibold transition-all flex items-center justify-center gap-1 xs:gap-1.5 sm:gap-2 shadow-2xs active:scale-[0.98] rounded-xs truncate"
               >
-                <Crown className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gold-dark" />
+                <Crown className="w-3 h-3 xs:w-3.5 xs:h-3.5 sm:w-4 sm:h-4 text-gold-dark shrink-0" />
                 <span>{lang === 'ta' ? 'மணப்பெண் நகைகள்' : 'Bridal'}</span>
               </button>
             </div>
 
-            {/* Heritage Highlights: Desktop 4-box grid, Mobile clean 1-line badge strip */}
+            {/* Heritage Highlights: Desktop 4-box grid */}
             <div className="hidden sm:grid pt-4 sm:pt-6 border-t border-charcoal-border/40 grid-cols-4 gap-4 text-left max-w-xl mx-auto lg:mx-0">
               {highlights.map((h, i) => (
                 <div key={i} className="p-2 sm:p-2.5 bg-ivory-100/70 border-l-2 border-gold">
@@ -169,10 +169,10 @@ export default function HeroSection({ onExploreCollections, onExploreBridal, lan
             </div>
 
             {/* Mobile Minimal Trust Strip */}
-            <div className="sm:hidden flex items-center justify-around py-2 px-3 bg-ivory-100/90 border border-gold/30 rounded-xs text-[10px] text-charcoal font-medium shadow-2xs">
+            <div className="sm:hidden flex items-center justify-around py-1.5 xs:py-2 px-2 xs:px-3 bg-ivory-100/90 border border-gold/30 rounded-xs text-[9px] xs:text-[10px] text-charcoal font-medium shadow-2xs">
               <span className="text-charcoal font-semibold">✦ 22K 916 Pure</span>
               <span className="text-gold/60">•</span>
-              <span className="text-charcoal font-semibold">✦ Palani Heritage</span>
+              <span className="text-charcoal font-semibold">✦ Palani Showroom</span>
               <span className="text-gold/60">•</span>
               <span className="text-charcoal font-semibold">✦ 100% Certified</span>
             </div>
@@ -216,7 +216,7 @@ export default function HeroSection({ onExploreCollections, onExploreBridal, lan
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-transparent to-transparent pointer-events-none z-20" />
 
                   {/* Floating Top Hallmark Badge */}
-                  <div className="absolute top-2.5 right-2.5 sm:top-4 sm:right-4 bg-charcoal/90 backdrop-blur-md border border-gold/60 text-gold-light text-[8px] sm:text-[10px] uppercase tracking-widest px-2 sm:px-2.5 py-0.5 sm:py-1 shadow-lg flex items-center gap-1 sm:gap-1.5 font-semibold z-30">
+                  <div className="absolute top-2 right-2 sm:top-4 sm:right-4 bg-charcoal/90 backdrop-blur-md border border-gold/60 text-gold-light text-[8px] sm:text-[10px] uppercase tracking-widest px-2 sm:px-2.5 py-0.5 sm:py-1 shadow-lg flex items-center gap-1 sm:gap-1.5 font-semibold z-30">
                     <Award className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 text-gold animate-pulse" />
                     <span>22K BIS 916 Standard</span>
                   </div>
@@ -228,9 +228,9 @@ export default function HeroSection({ onExploreCollections, onExploreBridal, lan
                       prevSlide();
                     }}
                     aria-label="Previous jewel slide"
-                    className="absolute left-2 top-1/2 -translate-y-1/2 z-30 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-charcoal/70 hover:bg-charcoal text-gold-light border border-gold/50 flex items-center justify-center opacity-80 hover:opacity-100 transition-all active:scale-95 shadow-md"
+                    className="absolute left-1.5 sm:left-2 top-1/2 -translate-y-1/2 z-30 w-6 h-6 xs:w-7 xs:h-7 sm:w-8 sm:h-8 rounded-full bg-charcoal/70 hover:bg-charcoal text-gold-light border border-gold/50 flex items-center justify-center opacity-85 hover:opacity-100 transition-all active:scale-95 shadow-md"
                   >
-                    <ChevronLeft className="w-4 h-4" />
+                    <ChevronLeft className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                   </button>
 
                   <button
@@ -239,13 +239,13 @@ export default function HeroSection({ onExploreCollections, onExploreBridal, lan
                       nextSlide();
                     }}
                     aria-label="Next jewel slide"
-                    className="absolute right-2 top-1/2 -translate-y-1/2 z-30 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-charcoal/70 hover:bg-charcoal text-gold-light border border-gold/50 flex items-center justify-center opacity-80 hover:opacity-100 transition-all active:scale-95 shadow-md"
+                    className="absolute right-1.5 sm:right-2 top-1/2 -translate-y-1/2 z-30 w-6 h-6 xs:w-7 xs:h-7 sm:w-8 sm:h-8 rounded-full bg-charcoal/70 hover:bg-charcoal text-gold-light border border-gold/50 flex items-center justify-center opacity-85 hover:opacity-100 transition-all active:scale-95 shadow-md"
                   >
-                    <ChevronRight className="w-4 h-4" />
+                    <ChevronRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                   </button>
 
                   {/* Slide Indicators / Dots */}
-                  <div className="absolute top-2.5 left-2.5 sm:top-4 sm:left-4 z-30 flex items-center gap-1.5 bg-charcoal/80 backdrop-blur-xs px-2 py-1 rounded-full border border-gold/30">
+                  <div className="absolute top-2 left-2 sm:top-4 sm:left-4 z-30 flex items-center gap-1 xs:gap-1.5 bg-charcoal/80 backdrop-blur-xs px-1.5 xs:px-2 py-0.5 xs:py-1 rounded-full border border-gold/30">
                     {HERO_SLIDES.map((_, dotIdx) => (
                       <button
                         key={dotIdx}
@@ -253,7 +253,7 @@ export default function HeroSection({ onExploreCollections, onExploreBridal, lan
                         aria-label={`Go to slide ${dotIdx + 1}`}
                         className={`transition-all duration-300 rounded-full ${
                           activeSlide === dotIdx
-                            ? 'w-4 sm:w-5 h-1.5 bg-gold shadow-xs'
+                            ? 'w-3.5 xs:w-4 sm:w-5 h-1.5 bg-gold shadow-xs'
                             : 'w-1.5 h-1.5 bg-ivory/50 hover:bg-ivory'
                         }`}
                       />
@@ -261,12 +261,12 @@ export default function HeroSection({ onExploreCollections, onExploreBridal, lan
                   </div>
 
                   {/* Floating Editorial Bottom Badge with Active Slide Info */}
-                  <div className="absolute bottom-2.5 left-2.5 right-2.5 sm:bottom-4 sm:left-4 sm:right-4 bg-ivory/95 backdrop-blur-md border border-gold/50 p-2.5 sm:p-4 shadow-xl flex flex-col sm:flex-row sm:items-center justify-between gap-2 z-30 rounded-xs">
+                  <div className="absolute bottom-2 left-2 right-2 sm:bottom-4 sm:left-4 sm:right-4 bg-ivory/95 backdrop-blur-md border border-gold/50 p-2 xs:p-2.5 sm:p-4 shadow-xl flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-2 z-30 rounded-xs">
                     <div className="flex-1 min-w-0">
-                      <span className="text-[8px] sm:text-[9px] uppercase tracking-[0.2em] text-gold-dark font-bold block truncate">
+                      <span className="text-[7px] xs:text-[8px] sm:text-[9px] uppercase tracking-[0.18em] sm:tracking-[0.2em] text-gold-dark font-bold block truncate">
                         {lang === 'ta' ? currentSlide.tagTa : currentSlide.tag}
                       </span>
-                      <h4 className="font-serif text-xs sm:text-lg text-charcoal font-semibold truncate leading-tight mt-0.5">
+                      <h4 className="font-serif text-[11px] xs:text-xs sm:text-lg text-charcoal font-semibold truncate leading-tight mt-0.5">
                         {lang === 'ta' ? currentSlide.titleTa : currentSlide.title}
                       </h4>
                       <p className="text-[8px] sm:text-[10px] text-charcoal-muted line-clamp-1">
@@ -275,7 +275,7 @@ export default function HeroSection({ onExploreCollections, onExploreBridal, lan
                     </div>
                     <button
                       onClick={onExploreCollections}
-                      className="w-full sm:w-auto px-2.5 sm:px-3 py-1 sm:py-1.5 bg-maroon text-ivory text-[8px] sm:text-[10px] uppercase tracking-wider font-semibold hover:bg-maroon-light transition-all shrink-0 text-center rounded-2xs"
+                      className="w-full sm:w-auto px-2 xs:px-2.5 sm:px-3 py-1 sm:py-1.5 bg-maroon text-ivory text-[8px] sm:text-[10px] uppercase tracking-wider font-semibold hover:bg-maroon-light transition-all shrink-0 text-center rounded-2xs"
                     >
                       {lang === 'ta' ? 'பார்க்க' : 'View Piece'}
                     </button>

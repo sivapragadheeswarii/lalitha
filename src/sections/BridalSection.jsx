@@ -76,24 +76,24 @@ export default function BridalSection({ onExploreBridal, onEnquireBridal, lang =
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/20 to-transparent pointer-events-none" />
 
                 {/* Floating Bottom Card - Responsive column on mobile */}
-                <div className="absolute bottom-3 left-3 right-3 sm:bottom-5 sm:left-5 sm:right-5 p-3 sm:p-5 bg-ivory/95 backdrop-blur-md border border-gold/50 shadow-xl rounded-xs">
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
-                    <div>
-                      <div className="flex items-center gap-1.5 text-gold-dark text-[9px] sm:text-[10px] uppercase tracking-widest font-semibold">
-                        <Crown className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gold-dark" />
+                <div className="absolute bottom-2 left-2 right-2 sm:bottom-5 sm:left-5 sm:right-5 p-2 xs:p-2.5 sm:p-5 bg-ivory/95 backdrop-blur-md border border-gold/50 shadow-xl rounded-xs">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 xs:gap-2 sm:gap-2.5">
+                    <div className="min-w-0">
+                      <div className="flex items-center gap-1 text-gold-dark text-[8px] xs:text-[9px] sm:text-[10px] uppercase tracking-wider sm:tracking-widest font-semibold truncate">
+                        <Crown className="w-3 h-3 sm:w-4 sm:h-4 text-gold-dark shrink-0" />
                         <span>Auspicious Wedding Adornments</span>
                       </div>
-                      <h4 className="font-serif text-sm sm:text-xl text-charcoal font-medium mt-0.5 sm:mt-1">
+                      <h4 className="font-serif text-xs xs:text-sm sm:text-xl text-charcoal font-medium mt-0.5 sm:mt-1 truncate leading-tight">
                         {activeLook.title}
                       </h4>
-                      <p className="text-[9px] sm:text-[11px] text-charcoal-muted">
+                      <p className="text-[8px] xs:text-[9px] sm:text-[11px] text-charcoal-muted truncate">
                         {activeLook.subtitle}
                       </p>
                     </div>
 
                     <button
                       onClick={onExploreBridal}
-                      className="w-full sm:w-auto px-3.5 py-1.5 sm:py-2 bg-maroon text-ivory text-[9px] sm:text-[10px] uppercase tracking-wider font-semibold hover:bg-maroon-light transition-all shrink-0 text-center"
+                      className="w-full sm:w-auto px-2.5 xs:px-3.5 py-1 xs:py-1.5 sm:py-2 bg-maroon text-ivory text-[8px] xs:text-[9px] sm:text-[10px] uppercase tracking-wider font-semibold hover:bg-maroon-light transition-all shrink-0 text-center"
                     >
                       View Suite
                     </button>
@@ -167,10 +167,10 @@ export default function BridalSection({ onExploreBridal, onEnquireBridal, lang =
             </div>
 
             {/* Action Buttons */}
-            <div className="pt-2 sm:pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
+            <div className="pt-2 sm:pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-2.5 sm:gap-4">
               <button
                 onClick={onExploreBridal}
-                className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-maroon text-ivory text-xs uppercase tracking-[0.2em] font-semibold hover:bg-maroon-light transition-all shadow-md hover:shadow-xl flex items-center justify-center gap-2 group active:scale-[0.99] border border-gold/40"
+                className="w-full sm:w-auto px-4 xs:px-6 sm:px-8 py-3 sm:py-4 bg-maroon text-ivory text-[11px] xs:text-xs uppercase tracking-[0.14em] sm:tracking-[0.2em] font-semibold hover:bg-maroon-light transition-all shadow-md hover:shadow-xl flex items-center justify-center gap-2 group active:scale-[0.99] border border-gold/40"
               >
                 <span>{lang === 'ta' ? 'மணப்பெண் தொகுப்பை பார்க்க' : 'Explore Bridal Collection'}</span>
                 <ArrowRight className="w-4 h-4 text-gold-light group-hover:translate-x-1.5 transition-transform" />
@@ -178,7 +178,7 @@ export default function BridalSection({ onExploreBridal, onEnquireBridal, lang =
 
               <button
                 onClick={onEnquireBridal}
-                className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-white border border-charcoal-border hover:border-gold hover:bg-gold-50/50 text-charcoal text-xs uppercase tracking-[0.2em] font-semibold transition-all flex items-center justify-center gap-2 shadow-xs active:scale-[0.99]"
+                className="w-full sm:w-auto px-4 xs:px-6 sm:px-8 py-3 sm:py-4 bg-white border border-charcoal-border hover:border-gold hover:bg-gold-50/50 text-charcoal text-[11px] xs:text-xs uppercase tracking-[0.14em] sm:tracking-[0.2em] font-semibold transition-all flex items-center justify-center gap-2 shadow-xs active:scale-[0.99]"
               >
                 <Crown className="w-4 h-4 text-gold-dark" />
                 <span>{lang === 'ta' ? 'திருமண ஆலோசனை கோர' : 'Book Bridal Consultation'}</span>

@@ -53,35 +53,35 @@ export default function GoldRateBannerSection({ onOpenCalculator, lang = 'en' })
 
           {/* Right Column: Live Rate Cards Grid */}
           <div className="lg:col-span-7">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 xs:gap-2.5 sm:gap-4">
               {rates.map((item, idx) => (
                 <div
                   key={idx}
-                  className={`p-2.5 sm:p-4 rounded border transition-all duration-300 relative overflow-hidden group ${
+                  className={`p-2 xs:p-2.5 sm:p-4 rounded border transition-all duration-300 relative overflow-hidden group ${
                     item.highlight
                       ? 'bg-gradient-to-b from-[#2c2220] to-[#1c1615] border-gold/60 shadow-md'
                       : 'bg-[#1b1716] border-charcoal-border/50'
                   }`}
                 >
-                  <div className="text-[9px] sm:text-[10px] uppercase tracking-wider text-ivory/60 font-medium">
+                  <div className="text-[8px] xs:text-[9px] sm:text-[10px] uppercase tracking-wider text-ivory/60 font-medium">
                     {item.purity}
                   </div>
-                  <div className="text-[8px] sm:text-[9px] text-gold-light/90 mb-1 sm:mb-2 truncate">
+                  <div className="text-[7px] xs:text-[8px] sm:text-[9px] text-gold-light/90 mb-1 sm:mb-2 truncate">
                     {item.sub}
                   </div>
-                  <div className={`font-serif text-base sm:text-xl font-bold tracking-tight ${item.highlight ? 'text-gold-light' : 'text-ivory'}`}>
+                  <div className={`font-serif text-sm xs:text-base sm:text-xl font-bold tracking-tight truncate ${item.highlight ? 'text-gold-light' : 'text-ivory'}`}>
                     {item.rate}
                   </div>
                   <div className="mt-1 sm:mt-2 text-[8px] sm:text-[9px] text-emerald-400 flex items-center gap-1">
-                    <TrendingUp className="w-2.5 h-2.5" />
-                    <span>{item.delta}</span>
+                    <TrendingUp className="w-2.5 h-2.5 shrink-0" />
+                    <span className="truncate">{item.delta}</span>
                   </div>
                 </div>
               ))}
             </div>
 
             {/* Trust Certification Strip below cards */}
-            <div className="mt-3 sm:mt-4 pt-2.5 sm:pt-3 border-t border-gold/20 flex flex-col sm:flex-row items-center justify-between gap-1.5 sm:gap-3 text-[9px] sm:text-[10px] text-ivory/60 text-center sm:text-left">
+            <div className="mt-3 sm:mt-4 pt-2.5 sm:pt-3 border-t border-gold/20 flex flex-col sm:flex-row items-center justify-between gap-1.5 sm:gap-3 text-[8px] xs:text-[9px] sm:text-[10px] text-ivory/60 text-center sm:text-left">
               <div className="flex items-center gap-1">
                 <Award className="w-3 h-3 text-gold" />
                 <span>BIS 916 Hallmark Certified</span>

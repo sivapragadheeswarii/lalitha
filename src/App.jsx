@@ -105,7 +105,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-ivory text-charcoal font-sans selection:bg-gold-200 selection:text-maroon pb-14 md:pb-0">
+    <div className="min-h-screen flex flex-col bg-ivory text-charcoal font-sans selection:bg-gold-200 selection:text-maroon pb-20 md:pb-0">
       {/* 1. Live Gold Rate Marquee Announcement Bar */}
       <AnnouncementBar onOpenCalculator={() => setIsCalculatorOpen(true)} />
 

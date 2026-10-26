@@ -52,9 +52,9 @@ export default function CategoryCard({
       </div>
 
       {/* Content Overlay */}
-      <div className="absolute inset-0 p-3 sm:p-5 flex flex-col justify-end text-ivory z-10 pointer-events-none">
+      <div className="absolute inset-0 p-2.5 xs:p-3 sm:p-5 flex flex-col justify-end text-ivory z-10 pointer-events-none">
         <div className="transform transition-transform duration-300 group-hover:-translate-y-0.5">
-          <div className="flex items-center justify-between text-[8px] sm:text-[10px] tracking-[0.2em] uppercase text-gold-light font-medium mb-0.5">
+          <div className="flex items-center justify-between text-[7px] xs:text-[8px] sm:text-[10px] tracking-[0.16em] sm:tracking-[0.2em] uppercase text-gold-light font-medium mb-0.5">
             <span>{category.count}</span>
             {isFeatured && (
               <span className="hidden sm:inline-block text-[9px] text-ivory/70 tracking-widest font-light">
@@ -63,14 +63,14 @@ export default function CategoryCard({
             )}
           </div>
 
-          <div className="flex items-center justify-between gap-1.5">
+          <div className="flex items-center justify-between gap-1 xs:gap-1.5">
             <h3 className={`font-serif text-ivory font-medium tracking-wide leading-tight line-clamp-1 ${
-              isFeatured ? 'text-base sm:text-2xl md:text-3xl' : 'text-sm sm:text-xl md:text-2xl'
+              isFeatured ? 'text-sm xs:text-base sm:text-2xl md:text-3xl' : 'text-xs xs:text-sm sm:text-xl md:text-2xl'
             }`}>
               {lang === 'ta' && category.nameTa ? category.nameTa : category.name}
             </h3>
-            <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-ivory/20 backdrop-blur-sm border border-gold/40 flex items-center justify-center text-gold-light group-hover:bg-gold group-hover:text-charcoal transition-all duration-300 shrink-0">
-              <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            <div className="w-5 h-5 xs:w-6 xs:h-6 sm:w-8 sm:h-8 rounded-full bg-ivory/20 backdrop-blur-sm border border-gold/40 flex items-center justify-center text-gold-light group-hover:bg-gold group-hover:text-charcoal transition-all duration-300 shrink-0">
+              <ArrowUpRight className="w-3 h-3 xs:w-3.5 xs:h-3.5 sm:w-4 sm:h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </div>
           </div>
 
