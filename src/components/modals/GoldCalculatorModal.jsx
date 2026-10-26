@@ -32,7 +32,7 @@ export default function GoldCalculatorModal({ isOpen, onClose }) {
 
   const handleWhatsAppEnquiry = () => {
     const metalLabel = metal === '22k' ? '22K Hallmarked Gold' : metal === '24k' ? '24K Pure Gold' : 'Pure Silver';
-    const msg = `Vanakkam Lalita Jewellers, I calculated an estimate for ${weight}g of ${metalLabel} (Est: ₹${totalEstimate.toLocaleString('en-IN')}) on your website. I would like to consult your Palani boutique for custom crafting.`;
+    const msg = `Vanakkam Lalita Jewellers, I calculated an estimate for ${weight}g of ${metalLabel} (Est: ₹${totalEstimate.toLocaleString('en-IN')}) on your website. I would like to consult your Palani showroom for custom crafting.`;
     const cleanNumber = BRAND_CONFIG.whatsappNumber ? BRAND_CONFIG.whatsappNumber.replace(/[^0-9]/g, '') : '919443722255';
     window.open(`https://wa.me/${cleanNumber}?text=${encodeURIComponent(msg)}`, '_blank');
   };
@@ -166,7 +166,7 @@ export default function GoldCalculatorModal({ isOpen, onClose }) {
 
         <div className="text-[11px] text-charcoal-muted italic flex items-start gap-1.5">
           <Info className="w-3.5 h-3.5 text-gold-dark shrink-0 mt-0.5" />
-          <span>*Indicative demo benchmark calculation for Palani boutique. Actual making charges vary based on handcrafted filigree and gemstone setting.</span>
+          <span>*Indicative demo benchmark calculation for Palani showroom. Actual making charges vary based on handcrafted filigree and gemstone setting.</span>
         </div>
 
         {/* Action Button */}

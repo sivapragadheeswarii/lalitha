@@ -220,7 +220,7 @@ export default function ReviewsSection() {
         {/* Bottom CTA to Share Experience */}
         <div className="mt-12 text-center bg-white p-6 border border-gold/30 max-w-xl mx-auto shadow-sm">
           <h4 className="font-serif text-xl text-charcoal font-medium">
-            Have You Visited Our Palani Boutique?
+            Have You Visited Our Palani Showroom?
           </h4>
           <p className="text-xs text-charcoal-muted mt-1">
             We value your patronage and would be honored to hear about your experience.

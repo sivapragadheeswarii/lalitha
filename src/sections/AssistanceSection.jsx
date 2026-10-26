@@ -67,14 +67,14 @@ export default function AssistanceSection({ onOpenEnquiry }) {
             )}
           </div>
 
-          {/* Card 2: Boutique Visit in Palani */}
+          {/* Card 2: Showroom Visit in Palani */}
           <div className="p-6 bg-white border border-charcoal-border/60 hover:border-gold transition-all flex flex-col justify-between space-y-4">
             <div className="space-y-2">
               <div className="w-10 h-10 rounded-full bg-gold-50 text-maroon flex items-center justify-center border border-gold-200">
                 <MapPin className="w-5 h-5 text-gold-dark" />
               </div>
               <h3 className="font-serif text-xl text-charcoal font-medium">
-                Palani Boutique Visit
+                Palani Showroom Visit
               </h3>
               <p className="text-xs text-charcoal-muted leading-relaxed">
                 Experience our curated jewellery collection in person with dedicated guidance from our experienced staff.

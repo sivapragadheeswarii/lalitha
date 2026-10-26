@@ -85,12 +85,12 @@ npm run build
 
 ---
 
-## 📍 Boutique Information
+## 📍 Showroom Information
 
 - **Brand**: Lalita Jewellers
 - **Location**: Palani, Tamil Nadu, India
 - **Standard**: 22K 916 Hallmark Standard
-- **Boutique Hours**: Mon – Sat: 10:00 AM – 8:30 PM | Sun: 10:00 AM – 7:30 PM
+- **Showroom Hours**: Mon – Sat: 10:00 AM – 8:30 PM | Sun: 10:00 AM – 7:30 PM
 
 ---
 

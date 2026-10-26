@@ -9,7 +9,7 @@ export default function AnnouncementBar({ onOpenCalculator }) {
     { label: "1 PAVUN (8g)", rate: "₹ 1,04,680", highlight: true },
     { label: "PURE SILVER (1g)", rate: "₹ 220" },
     { label: "BIS 916 HALLMARK", rate: "100% Certified" },
-    { label: "PALANI BOUTIQUE", rate: "Main Bazaar Road" },
+    { label: "PALANI SHOWROOM", rate: "Main Bazaar Road" },
   ];
 
   return (

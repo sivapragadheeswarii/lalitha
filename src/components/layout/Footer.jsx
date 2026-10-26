@@ -94,7 +94,7 @@ export default function Footer({ onSelectCategory, onOpenEnquiry }) {
               Store Enquiries
             </h4>
             <p className="text-xs text-ivory/70 leading-relaxed font-light">
-              Visit our boutique in Palani for personalized viewing of heritage gold jewellery and bridal collections.
+              Visit our jewellery showroom in Palani for personalized viewing of heritage gold jewellery and bridal collections.
             </p>
 
             <div className="bg-ivory/5 border border-gold/20 p-3 space-y-2 text-xs">

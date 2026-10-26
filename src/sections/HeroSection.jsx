@@ -5,7 +5,7 @@ import ImageWithFallback from '../components/common/ImageWithFallback';
 export default function HeroSection({ onExploreCollections, onExploreBridal, lang = 'en' }) {
   const highlights = [
     { label: "22K 916", desc: lang === 'ta' ? "தூய தங்கம்" : "Heritage Purity" },
-    { label: "Palani", desc: lang === 'ta' ? "பழனி பட்டறை" : "Tamil Nadu Boutique" },
+    { label: "Palani", desc: lang === 'ta' ? "பழனி பட்டறை" : "Tamil Nadu Showroom" },
     { label: "Bespoke", desc: lang === 'ta' ? "பாரம்பரிய கைவினை" : "Artisan Goldsmithing" },
     { label: "100%", desc: lang === 'ta' ? "நேர்மையான விலை" : "Authentic Designs" },
   ];
@@ -27,7 +27,7 @@ export default function HeroSection({ onExploreCollections, onExploreBridal, lan
           <div className="flex items-center gap-4 sm:gap-6 overflow-hidden whitespace-nowrap text-ivory/90 font-light text-[10px] sm:text-xs">
             <span>✦ 22K 916 Hallmarked Temple Jewellery</span>
             <span className="hidden sm:inline">✦ Handcrafted Muhurtham Bridal Harams</span>
-            <span className="hidden md:inline">✦ Palani Main Bazaar Boutique</span>
+            <span className="hidden md:inline">✦ Palani Main Bazaar Showroom</span>
           </div>
           <div className="flex items-center gap-1 text-gold-light font-medium text-[9px] sm:text-[10px] uppercase tracking-wider shrink-0">
             <Sparkles className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-gold" />

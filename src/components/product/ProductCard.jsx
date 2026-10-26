@@ -112,7 +112,7 @@ export default function ProductCard({
               </span>
             </div>
             <span className="text-[8px] sm:text-[9px] text-charcoal-muted block sm:block hidden">
-              Palani Boutique
+              Palani Showroom
             </span>
           </div>
 
