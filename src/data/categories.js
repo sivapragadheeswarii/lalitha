@@ -23,7 +23,7 @@ export const CATEGORIES = [
     nameTa: "அட்டிகை & மாலைகள்",
     tagline: "Chokers, Malas & Kasu Malai",
     count: "40+ Designs",
-    image: "/images/kemp-necklace.jpg",
+    image: "/images/lakshmi-kasu.jpg",
     description: "Captivating temple motifs, antique mango malas, and contemporary statement royal collars."
   },
   {
@@ -68,7 +68,7 @@ export const CATEGORIES = [
     nameTa: "வெள்ளி & பூஜை பொருட்கள்",
     tagline: "Kaal Thandai, Metti & Sacred Lamps",
     count: "28+ Designs",
-    image: "/images/silver-anklet.jpg",
-    description: "Traditional bridal kaal thandai anklets, pure silver metti, auspicious Mahameru, and temple pooja items."
+    image: "/images/silver-pooja.jpg",
+    description: "Traditional bridal kaal thandai anklets, pure silver metti, auspicious Kuthu Vilakku, and temple pooja items."
   }
 ];
